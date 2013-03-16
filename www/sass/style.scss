@@ -1,0 +1,335 @@
+//  IMPORTS
+//----------------------------------------------------------------------------------------
+
+@import "base";
+
+
+//  GRID SETUP
+//----------------------------------------------------------------------------------------
+
+// $total-columns  : 12;
+// $column-width   : 60px;
+// $gutter-width   : 20px;
+// $grid-padding   : $gutter-width;
+
+// $show-grid-backgrounds  : true;
+
+
+//  COLORS
+//----------------------------------------------------------------------------------------
+
+$myred: #990000;
+$background: $myred;
+$baseblack: #121212;
+$basewhite: #f9f9f9;
+
+/*  SELECTION COLORS
+----------------------------------------------------------------------------------------*/
+
+$selection-color: $baseblack;
+$selection-text: invert($selection-color);
+::selection {
+    background: $selection-color;
+    text-shadow: none;
+    color: $selection-text;
+}
+::-moz-selection {
+    background: $selection-color;
+    text-shadow: none;
+    color: $selection-text;
+}
+img::selection      {background: transparent;}
+img::-moz-selection {background: transparent;}
+body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
+
+
+/*  TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+/* NOTE: Loading svg before ttf for better rendering in chrome for windows */
+@font-face {
+    font-family: 'intro caps';
+    src: url('/fonts/Intro_Regular_Caps-webfont.eot');
+    src: url('/fonts/Intro_Regular_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular') format('svg'),
+         url('/fonts/Intro_Regular_Caps-webfont.woff') format('woff'),
+         url('/fonts/Intro_Regular_Caps-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'intro caps';
+    src: url('/fonts/Intro_Bold_Caps-webfont.eot');
+    src: url('/fonts/Intro_Bold_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular') format('svg'),
+         url('/fonts/Intro_Bold_Caps-webfont.woff') format('woff'),
+         url('/fonts/Intro_Bold_Caps-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'intro caps';
+    src: url('/fonts/Intro_Black_Caps-webfont.eot');
+    src: url('/fonts/Intro_Black_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Intro_Black_Caps-webfont.svg#intro_black_capsregular') format('svg'),
+         url('/fonts/Intro_Black_Caps-webfont.woff') format('woff'),
+         url('/fonts/Intro_Black_Caps-webfont.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+@mixin intro-font {
+    font-family: 'intro caps', arial, sans-serif;
+    text-transform: uppercase;
+}
+
+@include establish-baseline;
+
+body {
+    background: $background;
+    font-family: Georgia, serif;
+}
+
+h1,h2,h3,h4,h5,h6,
+[class*="fauxh"]{
+    font-weight: bold;
+}
+
+h1,
+.fauxh1 {
+    @include adjust-font-size-to(24px); 
+}
+h1:first-child,
+.fauxh1:first-child {
+}
+
+h2,
+.fauxh2 {
+}
+
+h3,
+.fauxh3 {
+}
+
+h4,
+.fauxh4 {}
+
+h5,
+.fauxh5 {}
+
+h6,
+.fauxh6 {}
+
+small {@include adjust-font-size-to(9px);}
+
+code,
+pre {
+    font-family: Monaco, 'Courier New', monospace;
+    @include rhythm-borders(1px);
+}
+
+sup,
+sub {line-height: 0em;}
+sup {vertical-align: super;}
+sub {vertical-align: sub;}
+
+i,
+em {font-style: italic;}
+
+b,
+strong {font-weight: bold;}
+
+p {}
+
+blockquote {}
+
+figure {}
+
+figure-caption {}
+
+ol, ul {
+    padding-left: 1.8em;
+}
+
+li {}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*  LINKS
+----------------------------------------------------------------------------------------*/
+
+a {
+    color: #3f3f3f;
+    text-decoration: none;
+    &:hover, &:focus {
+        color: #000;
+        border-color: #000;
+    }
+
+    &:active {
+        color: #990000;
+    }
+}
+
+
+/*  LAYOUT
+----------------------------------------------------------------------------------------*/
+
+$page-width: 700px;
+
+
+/*  STYLING
+----------------------------------------------------------------------------------------*/
+
+body {
+    @include intro-font;
+    color: $basewhite;
+}
+
+.mast {
+
+    color: $basewhite;
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    padding-bottom: .8em;
+    line-height: 1.4em;
+
+    .nameplate {
+        font-weight: 900;
+        letter-spacing: .1em;
+        // .char4 {letter-spacing: 0px;}
+        // .char8 {letter-spacing: 0px;}
+    }
+    
+    a {color: $basewhite;}
+
+}
+
+.main {
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 1.4em;
+}
+.nav {
+    a {
+        
+        color: $basewhite;
+        font-weight: 900;
+
+        &:hover,
+        &:focus {
+            color: inherit;
+            text-decoration: underline;
+        }
+
+    }
+
+}
+.poster {
+    position:relative;
+    background: $background;
+    display: table;
+    width: 100%;
+    overflow: hidden;
+
+    .header {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 1em 1%;
+    }
+
+}
+.nav p {
+
+    }
+.excess {
+    @include single-transition(all, .5s, ease-in-out, 0s)
+}
+.main {
+    position:relative;
+    overflow: hidden;
+}
+
+
+$form-width: 70%;
+form.contact {
+    input, textarea {
+        padding: 0px;
+        width: $form-width;
+        display: block;
+        padding: 3px;
+        @include intro-font;
+        @include adjust-font-size-to(20px);
+        margin: 0 auto;
+        border: 2px solid gray;
+    }
+
+    textarea {
+        height: 90px;
+    }
+
+    textarea:focus, form input:focus {
+        border: 2px solid darkgray;
+    }
+
+    input.submit-button {
+        width: $form-width;
+        padding: 3px;
+        margin: 20px auto;
+        background: $baseblack;
+        color:$basewhite;
+        border:none;
+    }
+
+    label {
+        width: $form-width;
+        margin: 10px auto 0;
+        display: block;
+        font-size: 16px;
+    }
+}
+
+
+/*  MEDIA QUERIES
+----------------------------------------------------------------------------------------*/
+
+/*  Wide Screens  */
+@media screen and (min-width: 1300px) {
+
+
+}
+
+/*  Tablets Portrait  */
+@media screen and (max-width: 720px) {
+
+    .excess {
+        font-size: 0px;
+        color: transparent;
+    }
+
+}
+
+/*  Phone Landscape  */
+@media screen and (max-width: 35.5em) {
+
+
+}
+
+/*  Phone Portrait 400px or less  */
+@media screen and (max-width: 25em) {
+
+
+}
+
+@import 'print';
