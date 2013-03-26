@@ -48,11 +48,11 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
 /* NOTE: Loading svg before ttf for better rendering in chrome for windows */
 @font-face {
     font-family: 'intro caps';
-    src: url('/fonts/Intro_Regular_Caps-webfont.eot');
-    src: url('/fonts/Intro_Regular_Caps-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular') format('svg'),
-         url('/fonts/Intro_Regular_Caps-webfont.woff') format('woff'),
-         url('/fonts/Intro_Regular_Caps-webfont.ttf') format('truetype');
+    src: url('/assets/font/Intro_Regular_Caps-webfont.eot');
+    src: url('/assets/font/Intro_Regular_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular') format('svg'),
+         url('/assets/font/Intro_Regular_Caps-webfont.woff') format('woff'),
+         url('/assets/font/Intro_Regular_Caps-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -60,11 +60,11 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
 
 @font-face {
     font-family: 'intro caps';
-    src: url('/fonts/Intro_Bold_Caps-webfont.eot');
-    src: url('/fonts/Intro_Bold_Caps-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular') format('svg'),
-         url('/fonts/Intro_Bold_Caps-webfont.woff') format('woff'),
-         url('/fonts/Intro_Bold_Caps-webfont.ttf') format('truetype');
+    src: url('/assets/font/Intro_Bold_Caps-webfont.eot');
+    src: url('/assets/font/Intro_Bold_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular') format('svg'),
+         url('/assets/font/Intro_Bold_Caps-webfont.woff') format('woff'),
+         url('/assets/font/Intro_Bold_Caps-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -72,11 +72,11 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
 
 @font-face {
     font-family: 'intro caps';
-    src: url('/fonts/Intro_Black_Caps-webfont.eot');
-    src: url('/fonts/Intro_Black_Caps-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Intro_Black_Caps-webfont.svg#intro_black_capsregular') format('svg'),
-         url('/fonts/Intro_Black_Caps-webfont.woff') format('woff'),
-         url('/fonts/Intro_Black_Caps-webfont.ttf') format('truetype');
+    src: url('/assets/font/Intro_Black_Caps-webfont.eot');
+    src: url('/assets/font/Intro_Black_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Intro_Black_Caps-webfont.svg#intro_black_capsregular') format('svg'),
+         url('/assets/font/Intro_Black_Caps-webfont.woff') format('woff'),
+         url('/assets/font/Intro_Black_Caps-webfont.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
