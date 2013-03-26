@@ -1,6 +1,27 @@
 # scottstamile.com
 
+## INBOX
+
+    ## Identity
+    
+    Designer (utilitarian, communicator)
+    Front end Developer (code as design)
+    Amateur Photographer
+    Thinker of thoughts
+    Bicyclist
+    Gamer
+    Classic film lover
+    List maker
+
 ## Project Plan
+
+### Purpose of site
+
+Present work and achievements  
+Share ideas  
+Socialize and network  
+Be a link hub  
+Show off
 
 ## Main Navigation
 
@@ -30,16 +51,15 @@
 
 ### Homepage Page
 
-> The homepage is the about page. My work/portfolio is not compelling enough to be the feature component of the site.  
+> The homepage is the about page. My work/portfolio is not compelling enough to be the feature component of the site. 
 
-> The homepage should be the poster page the 10 second Introduction that precedes my resume and portfolio.
+> The homepage should be the poster page, the 10 second Introduction that precedes my resume and portfolio.
 
 **Brief Intro Section**
 
-    So...  
-    This is Scott Stamile's website.  
-    I am a web developer, here is my work  
-    Often I mess with photography  
+    This is Scott Stamile's website.
+    I am a web developer and designer, here is some of my work
+    Also, I often mess with photography
     and Rarely Update my blog
 
 **Billboard Section**
@@ -51,17 +71,33 @@
     - Obsessive coder
     - Meticulous pixel peeper (probably to a fault)
     - Background in sound engendering, amateur photographer.
+    - a but avanguard
+
+
 
 **Philosophy Section**
 
 > Dissection I should add to my website is things that I think are important or things that I care about with a series of icons identifying those areas similar to features for a product like accessibility
+
+> User interfaces don't need to be loaded with options to be useful. Focusing attention using clean proven design methods...
+
+> **Code as part of design**
+What's more important in today's mobile friendly world than performance. You can give users all the glits in the world but if the page doesn't load on 3G in under 5sec you already lost. Taking technical limitations and current trends in code into every design consideration.
+
+> **verbose commenter**
+Gotta be easy to manage
+Probably too much of my time goes into invention, commenting, and managing white space. I think it's worth it. 
+Screw you, I like verbose comments.
+
+My current process is sketch (paper), wireframe (omnigraffle for ipad), code static comp (sublime text), wile creating image based design elements I photoshop or illustrator. Than I test and deploy with using git.
 
     Things I give a shit about whether you do or not
     - Accessibility
     - Semantic Markup
     - Sustainability
     - interests
-    - Stuff I Obsess ove over in a meticulous way
+    - Stuff I Obsess over in a meticulous way
+    a great place to take a look at my code would be github, though there is not a ton there since i just started playing with git.
 
 **Sell It Section**
 
@@ -69,6 +105,9 @@
     - Each pixel optimized  
     - Optimized for performance  
     - Exploration  
+
+> energetic To join your team
+
 
 ### Resume Page
 
@@ -110,10 +149,6 @@ link to flickr for now
 > 
 > ![][personality]
 > 
-> **DNA**
-> 
-> ![][dna]
-> 
 > **Use Icons**
 > 
 > ![][icons]
@@ -138,7 +173,6 @@ link to flickr for now
 
 [resume]: https://www.evernote.com/shard/s1/sh/b845eb1f-09a7-4209-a3ea-724aef8da41b/39baf0c3093306b27ab3a35323ae127f/deep/0/Screenshot%203/18/13%202:12%20PM.jpg
 [personality]: https://www.evernote.com/shard/s1/sh/58dc9f29-ea18-4fb7-bc7f-2677e55b3d39/0af5310349982e117a5e883a862e0b24/deep/0/Screenshot%203/18/13%201:46%20PM.jpg
-[dna]: https://www.evernote.com/shard/s1/sh/b845eb1f-09a7-4209-a3ea-724aef8da41b/39baf0c3093306b27ab3a35323ae127f/deep/0/Screenshot%203/18/13%202:12%20PM.jpg
 [cta]: https://www.evernote.com/shard/s1/sh/bc5f98a8-d99b-4822-90e7-e3f1e4f6833e/6cdd8d6cd72ff9b3a5fd628d851355f6/deep/0/Screenshot%203/18/13%202:14%20PM.jpg
 [sell2]: https://www.evernote.com/shard/s1/sh/28bf60b4-9e76-43b9-9b7a-5ffaee190c5b/fbd6cf9cfc01bdfe1329e52a66cd7095/deep/0/Screenshot%203/18/13%202:10%20PM.jpg
 [whitespace]: https://www.evernote.com/shard/s1/sh/5b3afac4-26f1-4636-a964-f526da9954ad/9565efd176ad44644b74e868dd18f4f9/deep/0/Screenshot%203/18/13%201:22%20PM.jpg
