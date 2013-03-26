@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" version="1.1" viewBox="-510 -10 2020 2120" style="background-color:#000000" xlink:xlink="" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs />
+  <g>
+    <rect x="-500" y="0" width="2000" height="2100" opacity="1" fill="#E2E2E2" fill-opacity="1" />
+  </g>
+  <g>
+    <text x="34" y="75.5841789245605" font-size="43" fill="#000000" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">Hi, I'm Scott Stamile</text>
+    <text x="36.8753814697266" y="112.49471116066" font-size="18" fill="#565656" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">This is my site and stuff</text>
+    <text x="36.8753814697266" y="137.45076584816" font-size="18" fill="#565656" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">I hope you like it</text>
+    <line x1="-500" y1="200" x2="1500" y2="200" opacity="1" stroke="#595959" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="none" />
+    <g>
+      <text x="689.549987792969" y="174.55078125" font-size="20" fill="#565656" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">Blog</text>
+      <text x="918.856536865234" y="174.55078125" font-size="20" fill="#565656" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">Projects</text>
+      <text x="787.240356445313" y="174.55078125" font-size="20" fill="#565656" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">About Me</text>
+    </g>
+    <rect x="600" y="1100" width="300" height="100" opacity="1" stroke="#595959" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="none" fill-opacity="0" />
+    <rect x="250" y="1650" width="350" height="100" opacity="1" stroke="#595959" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="none" fill-opacity="0" />
+    <rect x="-500" y="1750" width="2000" height="350" opacity="1" fill="#680B0B" fill-opacity="1" />
+    <text x="229" y="424.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">Pellentesque habitant morbi tristique senectus et netus et malesuada</text>
+    <text x="229" y="452.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies</text>
+    <text x="229" y="480.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas</text>
+    <text x="229" y="508.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</text>
+    <text x="229" y="536.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat</text>
+    <text x="229" y="564.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean</text>
+    <text x="229" y="592.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,</text>
+    <text x="229" y="620.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar</text>
+    <text x="229" y="648.599609375" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">facilisis. Ut felis.</text>
+    <text x="229" y="673.599609375" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">
+    </text>
+    <text x="229" y="700.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">Pellentesque habitant morbi tristique senectus et netus et malesuada</text>
+    <text x="229" y="728.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies</text>
+    <text x="229" y="756.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas</text>
+    <text x="229" y="784.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</text>
+    <text x="229" y="812.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat</text>
+    <text x="229" y="840.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean</text>
+    <text x="229" y="868.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,</text>
+    <text x="229" y="896.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar</text>
+    <text x="229" y="924.599609375" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">facilisis. Ut felis.</text>
+    <text x="229" y="949.599609375" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">
+    </text>
+    <text x="229" y="976.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">Pellentesque habitant morbi tristique senectus et netus et malesuada</text>
+    <text x="229" y="1004.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies</text>
+    <text x="229" y="1032.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas</text>
+    <text x="229" y="1060.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</text>
+    <text x="229" y="1088.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat</text>
+    <text x="229" y="1116.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean</text>
+    <text x="229" y="1144.55078125" font-size="20" fill="#161616" fill-opacity="1" font-family="Euphemia UCAS" font-weight="normal" font-style="normal">fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,</text>
+  </g>
+</svg>
