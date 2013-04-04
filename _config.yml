@@ -1,0 +1,5 @@
+auto: false
+server: false
+permalink: /:categories/:title
+source: www
+destination: www_live

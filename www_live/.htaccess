@@ -1,0 +1,22 @@
+AuthType Basic
+AuthName "Scott Stamile's Home Server"
+AuthUserFile /Users/Scott/Dropbox/Sites/.htpasswd
+Require valid-user
+
+ErrorDocument 401 "<html><head><title>Not Authorized!</title></head><body><h1>Access Denied</h1><p>The URL  site you specified is not publicly accessible.</p></body></html>"
+
+Options +FollowSymlinks
+Options -Indexes
+# RewriteEngine On
+# RewriteCond %{http_host} ^scottstamile\.com [NC]
+# RewriteRule ^(.*)$ http://www.scottstamile.com/$1 [R=301,L]
+# 
+# ErrorDocument 404 /404
+# 
+# Re# writeCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*)/(.+)$ index.php?rt=$1&rt2=$2 [QSA,L]
+# 
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^(.*)$ index.php?rt=$1 [QSA]
