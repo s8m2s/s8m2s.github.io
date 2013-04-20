@@ -92,6 +92,10 @@ html[xmlns] .slides { display: block; }
 
 .flex-control-thumbs .flex-active { opacity: 1; cursor: default; }
 
+body { width: 100%; /* for IE 6/7 */ *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif"); /* non-JS fallback */ *zoom: 1; }
+body:before, body:after { content: "."; display: block; height: 0; overflow: hidden; }
+body:after { clear: both; }
+
 /*  SELECTION COLORS
 ----------------------------------------------------------------------------------------*/
 ::selection { background: #121212; text-shadow: none; color: #ededed; }

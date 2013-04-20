@@ -26,5 +26,5 @@ $(document).ready(function() {
 
 // Lettering.js adds spans around letters for letter selection
 $(document).ready(function() {
-    $(".nameplate a").lettering();
+    $(".nameplate").lettering();
 });
