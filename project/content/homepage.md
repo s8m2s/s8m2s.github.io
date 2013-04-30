@@ -11,9 +11,11 @@ and rarely Update my blog.
     - always play with new toys
 - seo optimized (and redundant)
 - clear communication
-    despite occasionally using far too many word in a sentence
+    Though occasionally uses far too many words in a sentence
 - Optimized for performance
+    This ... Instead of this....
 - hatred for drop-down menus
+- Sometimes I cheat to serve my semantic masters. Example...
 - All the usual front end codie stuff
     - css
     - sass/compass
@@ -23,10 +25,10 @@ and rarely Update my blog.
     - LAMP
     - git
     - php
-    - some ruby
+    - learning some ruby
 
 ## Things I give a shit about whether you do or not
 - Accessibility
 - Semantic Markup
 - Sustainability
-
+  Websites are not snapshots.they are living evolving medium. And Like it's organic counterparts it Degrades with time. if you do not choose the right materials during its inception. Even then it must be cared for.
