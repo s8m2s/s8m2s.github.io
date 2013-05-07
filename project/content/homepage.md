@@ -5,6 +5,7 @@ here is some of my work.
 Also, I often mess with photography, 
 and rarely Update my blog.
 
+
 <!-- Billboard Section Populated by Tweets with slide category #hashtag -->
 * Recent git Project. or Codepen Snippit
 * Recent dribbble Project ![Recent Design Project][DesignProject]
@@ -12,42 +13,43 @@ and rarely Update my blog.
 * Flickr Photo ![Recent Flickr Photo][RecentFlickr]
 * Blog or Podcast SubscriptionWe are what we consume ![Podcast's and Blog's][InfoDiet]
 
+
 <!-- Skills Section -->
-## Check out these super cool specs
+<!-- Unique blend of skills Section -->
+## Check out these specs
 - retina ready
-    - always play with new toys
-ndant)
+- always playing with new toys
 - clear communication
-    Though occasionally uses far too many words in a sentence
-Spotless Code
-- Gotta be easy to manage
-    Probably too much of my attention goes into indention, commenting, and managing white space. I think it's worth it.
-Screw you, I like verbose comments.
-
-a great place to take a look at my code would be github, though there is not a ton there since i just started playing with git.
-
+  Though occasionally uses far too many words in a sentence
+- Spotless Code
+- Easy to maintain
+  Probably too much of my attention goes into indention, commenting, and managing white space. I think it's worth it.
+And screw you, I like verbose comments.
 - Optimized for performance
     This ... Instead of this....
-
-<!-- Unique blend of skills Section -->
 - Obsessive coder   
 - Meticulous pixel peeper (probably to a fault)
 - Thinker of thoughts  
 
-<!-- Sell It Section -->
 
+<!-- Sell It Section -->
 - Every line considered
 - Each pixel optimized
-
 - clear navigation
-
 - flexible
 - Exploration
-
 - energetic To join your team
 
-<!-- Code as part of design -->
 
+<!-- Philosophy Section -->
+## Things I give a shit about whether you do or not
+- Accessibility
+- Semantic Markup
+- Sustainability
+  Websites are not snapshots.they are living evolving medium. And Like it's organic counterparts it Degrades with time. if you do not choose the right materials during its inception. Even then it must be cared for.
+
+
+<!-- Code as part of design -->
 By blending design and development not just as two disparate stages in the process but instead Making design Decisions based on the technical limitations and current trends in the code
 
 By handling design and development not as two disparate stages in the process but instead
@@ -67,10 +69,3 @@ User interfaces don't need to be loaded with options to be useful. Focusing atte
     - git
     - php
     - learning some ruby
-
-<!-- Philosophy Section -->
-## Things I give a shit about whether you do or not
-- Accessibility
-- Semantic Markup
-- Sustainability
-  Websites are not snapshots.they are living evolving medium. And Like it's organic counterparts it Degrades with time. if you do not choose the right materials during its inception. Even then it must be cared for.
