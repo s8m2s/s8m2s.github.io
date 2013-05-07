@@ -22,6 +22,8 @@ Nontraditional layout
 
 # Homepage
 
+Dissection I should add to my website is things that I think are important or things that I care about with a series of icons identifying those areas similar to features for a product like accessibility
+
 -   links
 -   social links
 -   Intro sentence

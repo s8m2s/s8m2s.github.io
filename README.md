@@ -96,6 +96,16 @@ link to flickr for now
 > 
 > ![][resume]
 
+## Workflow
+
+Develop a reusable process for building sites like this.
+Decide on best tools such as sublime text, terminal, textastic, Codekit, mixture.io, etc.
+
+Try to create a structured workflow or at-least guidelines for around the process. Brief > Sketches > Source order and content > Wire-framing > coded/prototype.
+
+Look at using git for deployment, sass+compass, haml, jekyll...
+
+
 [resume]: https://www.evernote.com/shard/s1/sh/b845eb1f-09a7-4209-a3ea-724aef8da41b/39baf0c3093306b27ab3a35323ae127f/deep/0/Screenshot%203/18/13%202:12%20PM.jpg
 [personality]: https://www.evernote.com/shard/s1/sh/58dc9f29-ea18-4fb7-bc7f-2677e55b3d39/0af5310349982e117a5e883a862e0b24/deep/0/Screenshot%203/18/13%201:46%20PM.jpg
 [cta]: https://www.evernote.com/shard/s1/sh/bc5f98a8-d99b-4822-90e7-e3f1e4f6833e/6cdd8d6cd72ff9b3a5fd628d851355f6/deep/0/Screenshot%203/18/13%202:14%20PM.jpg
