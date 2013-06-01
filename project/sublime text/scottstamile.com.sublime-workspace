@@ -91,6 +91,9 @@
 	},
 	"file_history":
 	[
+		"/Users/Scott/Dropbox/Sites/scottstamile.com/project/content/homepage.md",
+		"/Users/Scott/Dropbox/Sites/scottstamile.com/project/content/homepage 2013-05-21.md",
+		"/Users/Scott/Dropbox/Sites/scottstamile.com/project/sublime text/scottstamile.com.sublime-project",
 		"/Users/Scott/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Scott/Dropbox/Sites/scottstamile.com/project/sublime text/My Web Site.sublime-project",
 		"/Users/Scott/Documents/My Website.sublime-project",
@@ -178,6 +181,11 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"sheets":
+			[
+			]
 		}
 	],
 	"incremental_find":
@@ -197,11 +205,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":

@@ -1,0 +1,14 @@
+Sandbox Setup:
+  [x] install Ubuntu server
+  [x] install git-core, ruby, compass, apache
+  [ ] setup in basement
+  [ ] dns config on optimum
+
+Project Setup:
+  [ ] git
+  [ ] structure
+  [ ] compass
+
+Design:
+  [ ] look for designs
+  [ ] create design board
