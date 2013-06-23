@@ -1,12 +1,13 @@
 <!-- Brief Intro Section -->
-Hello, I'm Scott Stamile  
-I am a front end web developer and designer,  
-here is some of my work.  
-Also, I often mess with photography, 
-and rarely Update my blog.
+# Hey, I'm Scott Stamile
+
+This site will attempt to demonstrate what am awesome front end developer I am.
+
+New York in the fine suburbs of Long Island
 
 
-<!-- Billboard Section Populated by Tweets with slide category #hashtag -->
+<!-- Billboard Section Populated by Tweets with slide category #hashtag #sitecomment #design #devtip #quote -->
+<!-- could animate as you scroll by, blinking curser types out tweet -->
 * Recent git Project. or Codepen Snippet
 * Recent dribbble Project ![Recent Design Project][DesignProject]
 * Recent Tweet ![Tweet Image][RecentTweet]
@@ -15,22 +16,61 @@ and rarely Update my blog.
 
 
 <!-- Skills Section -->
-<!-- Unique blend of skills Section -->
 ## Check out the spec sheet
-- retina ready
-    I use SVG's wherever possible, when can't I serve a 2x image asset that gets loaded on supported devices.
-- always playing with new toys
-    It's easy to get tied into a tried and true way of doing things.
-    It's reliable, easy to estimate scope, consistent - but when companies say they want to innovate I get __ how can you innovate when your locked in to one way of doing things. There's a whole bunch of cool stuff going on out there, how can you introduce new ideas if you don't give yourself the freedom to play with the toys. 
-- clear communication
-  Though occasionally uses far too many words in a sentence
-- Spotless Code
-- Easy to maintain
+
+- ### Retina Ready  
+  The web is getting more and more resolution independent. I use SVG's and 2x images wherever possible.
+
+- ### Responsive  
+  The web isn't a piece of paper, way should we treat it like one.
+
+- ### Endlessly Planing  
+  Build it up to the moon and tare it down to earth.
+
+- ### Easy to maintain
   Probably too much of my attention goes into indention, commenting, and managing white space. I think it's worth it.
 And screw you, I like verbose comments.
 
+### All the usual front end codie stuff
+- front end stuff
+    - css
+    - sass + compass
+    - HTML
+    - javascript
+
+- Some back end stuff too
+    - LAMP
+    - git
+    - php
+    - learning some ruby
+
+## Optimized for performance
+This ... Instead of this....
+
+
+<!-- Coding Principles -->
+
+<!-- Code as part of design -->
+Websites are not snapshots.they are living evolving medium. And Like it's organic counterparts it Degrades with time. if you do not choose the right materials during its inception. Even then it must be cared for.
+
+By blending design and development not just as two disparate stages in the process but instead Making design Decisions based on the technical limitations and current trends in the code
+
+By handling design and development not as two disparate stages in the process but instead
+What's more important in today's mobile friendly world than performance. You can give users all the glits in the world but if the page doesn't load on 3G in under 5sec you already lost. Taking technical limitations and current trends in code into every design consideration.
+
+User interfaces don't need to be loaded with options to be useful. Focusing attention using clean proven design methods...
+
+
+- always playing with new toys
+    It's easy to get tied into a tried and true way of doing things.
+    It's reliable, easy to estimate scope, consistent - but when companies say they want to innovate I get __ how can you innovate when your locked in to one way of doing things. There's a whole bunch of cool stuff going on out there, how can you introduce new ideas if you don't give yourself the freedom to mess with this stuff. 
+- clear communication
+  Though occasionally uses far too many words in a sentence
+- Spotless Code
+
+
 - planning  
-Build it up to the moon and tare it down to earth."
+Build it up to the moon and tare it down to earth.
 
 
 - Responsive  
@@ -43,17 +83,6 @@ I very much subscribe to the belief that an artist must embrace unique character
 
 - Meticulous pixel peeper (probably to a fault)
 
-- All the usual front end codie stuff
-    - css
-    - sass/compass
-    - HTML
-    - javascript
-
-- Some back end stuff too
-    - LAMP
-    - git
-    - php
-    - learning some ruby
 
 - Thinker of thoughts
 
@@ -78,15 +107,7 @@ I very much subscribe to the belief that an artist must embrace unique character
 - Sustainability
 - hatred for drop-down menus
 
-<!-- Code as part of design -->
-Websites are not snapshots.they are living evolving medium. And Like it's organic counterparts it Degrades with time. if you do not choose the right materials during its inception. Even then it must be cared for.
 
-By blending design and development not just as two disparate stages in the process but instead Making design Decisions based on the technical limitations and current trends in the code
-
-By handling design and development not as two disparate stages in the process but instead
-What's more important in today's mobile friendly world than performance. You can give users all the glits in the world but if the page doesn't load on 3G in under 5sec you already lost. Taking technical limitations and current trends in code into every design consideration.
-
-User interfaces don't need to be loaded with options to be useful. Focusing attention using clean proven design methods...
 
 
 Sometimes I take photos,
@@ -98,7 +119,7 @@ Testimonials like from linked in.
 Why Scott?
 Html5 sass git etc...
 
-Nt just a Web slave
+Not just a Web slave
 
 Coding commando, whatever it takes
 

@@ -1,0 +1,81 @@
+>>> Compass is polling for changes. Press Ctrl-C to Stop.
+
+>>> Compass is polling for changes. Press Ctrl-C to Stop.
+>>> Change detected at 16:59:13 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 17:01:03 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 17:33:46 to: style.scss
+[31m[0m[31m[0m[32midentical[0m www/assets/css/style.css 
+>>> Change detected at 22:53:25 to: style.scss
+[31m[0m[31m[0m[32midentical[0m www/assets/css/style.css 
+>>> Change detected at 22:54:55 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 22:55:51 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 22:56:18 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 22:58:22 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 22:58:43 to: style.scss
+[31m[0mSignalException on line ["19"] of /home/scott/.rvm/gems/ruby-2.0.0-p195/gems/fssm-0.2.10/lib/fssm/backends/polling.rb: SIGTERM
+Run with --trace to see the full backtrace
+[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Compass is polling for changes. Press Ctrl-C to Stop.
+>>> Change detected at 14:57:23 to: style.scss
+[31m[0m[31m[0m[32midentical[0m www/assets/css/style.css 
+>>> Change detected at 15:11:25 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 15:22:49 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 15:23:16 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 15:24:14 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 15:24:28 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 15:24:29 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:36:54 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:39:18 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:40:12 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:40:39 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:46:20 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:47:21 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:50:29 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:50:45 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:55:26 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:56:14 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:58:44 to: style.scss
+[31m[0m[31m[0m[31m    error[0m www/assets/_sass/style.scss (Line 220: Invalid CSS after "...  line-height: ": expected expression (e.g. 1px, bold), was ";")
+[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:59:15 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 20:59:38 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 21:00:05 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 21:00:17 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 21:01:57 to: _base.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 21:02:23 to: _base.scss
+[31m[0m[31m[0m[32midentical[0m www/assets/css/style.css 
+>>> Change detected at 21:32:21 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 21:32:42 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 21:34:12 to: style.scss
+[31m[0m[31m[0m[33moverwrite[0m www/assets/css/style.css 
+>>> Change detected at 21:51:47 to: style.scss
+[31m[0m

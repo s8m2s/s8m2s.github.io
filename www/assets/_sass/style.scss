@@ -18,10 +18,11 @@
 //  COLORS
 //----------------------------------------------------------------------------------------
 
-$myred: #990000;
-$background: $myred;
+$myred: #b32007;
 $baseblack: #121212;
 $basewhite: #f9f9f9;
+
+$background: $basewhite;
 
 /*  SELECTION COLORS
 ----------------------------------------------------------------------------------------*/
@@ -89,7 +90,6 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
 @include establish-baseline;
 
 body {
-    background: $background;
     font-family: Georgia, serif;
 }
 
@@ -194,73 +194,50 @@ $page-width: 700px;
 
 body {
     @include intro-font;
-    color: $basewhite;
-}
-
-.mast {
-
-    color: $basewhite;
-    font-size: 1.8em;
-    letter-spacing: 3px;
-    padding-bottom: .8em;
-    line-height: 1.4em;
-
-    .nameplate {
-        font-weight: 900;
-        letter-spacing: .1em;
-        // .char4 {letter-spacing: 0px;}
-        // .char8 {letter-spacing: 0px;}
-    }
-    
-    a {color: $basewhite;}
-
-}
-
-.main {
-    font-size: 20px;
-    letter-spacing: 3px;
-    line-height: 1.4em;
-}
-.nav {
-    a {
-        
-        color: $basewhite;
-        font-weight: 900;
-
-        &:hover,
-        &:focus {
-            color: inherit;
-            text-decoration: underline;
-        }
-
-    }
-
-}
-.poster {
-    position:relative;
     background: $background;
-    display: table;
-    width: 100%;
-    overflow: hidden;
-
-    .header {
-        display: table-cell;
-        vertical-align: middle;
-        padding: 1em 1%;
-    }
-
+    color: $baseblack;
 }
-.nav p {
 
+#site-header {
+    background: $myred;
+    color: $basewhite;
+
+    &.poster {
+        position:relative;
+        display: table;
+        width: 100%;
+        overflow: hidden;
+        
+        .mast {
+        
+            display: table-cell;
+            vertical-align: middle;
+            padding: 1em 1%;
+            font-size: 1.8em;
+            letter-spacing: 3px;
+            padding-bottom: .8em;
+            line-height: 1.4em;
+        
+            .nameplate {
+                font-weight: 900;
+                font-size: 2.2em;
+                line-height: 1em;
+                letter-spacing: .1em;
+                margin: 0 0 .2em;
+                padding: 0;
+                border-bottom: 8px solid $basewhite;
+            }
+            
+            a {color: $basewhite;}
+        
+        }
+    
     }
+}
+
 .excess {
     @include single-transition(all, .5s, ease-in-out, 0s)
 }
-.main {
-    position:relative;
-    overflow: hidden;
-}
-
 
 $form-width: 70%;
 form.contact {
@@ -280,7 +257,7 @@ form.contact {
     }
 
     textarea:focus, form input:focus {
-        border: 2px solid darkgray;
+        border: 2px solid #999999;
     }
 
     input.submit-button {

@@ -1,0 +1,11 @@
+## Stack
+
+* apache
+* rvm
+* compass
+
+
+## Useful commands
+
+   $ nohup compass watch&
+
