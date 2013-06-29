@@ -1,10 +1,10 @@
 # Require any additional compass plugins here.
-require 'singularitygs'
+
 
 # Set this to the root of your project when deployed:
 http_path = "www/assets/"
 css_dir = "www/assets/css"
-sass_dir = "www/assets/_sass"
+sass_dir = "www/assets/sass"
 images_dir = "www/assets/img"
 javascripts_dir = "www/assets/js"
 

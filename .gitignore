@@ -30,7 +30,7 @@
 *.log
 *.sql
 *.sqlite
-nohup.out
+*.out
 
 # OS generated files #
 ######################

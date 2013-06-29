@@ -158,6 +158,20 @@ Try to create a structured workflow or at-least guidelines for around the proces
 
 Look at using git for deployment, sass+compass, haml, jekyll...
 
+## Server Instructions
+
+### Stack
+
+* apache
+* rvm
+* compass
+
+### Useful commands
+
+   $ nohup compass watch&
+
+
+
 
 [resume]: https://www.evernote.com/shard/s1/sh/b845eb1f-09a7-4209-a3ea-724aef8da41b/39baf0c3093306b27ab3a35323ae127f/deep/0/Screenshot%203/18/13%202:12%20PM.jpg
 [personality]: https://www.evernote.com/shard/s1/sh/58dc9f29-ea18-4fb7-bc7f-2677e55b3d39/0af5310349982e117a5e883a862e0b24/deep/0/Screenshot%203/18/13%201:46%20PM.jpg
