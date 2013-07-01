@@ -18,9 +18,10 @@
 //  COLORS
 //----------------------------------------------------------------------------------------
 
-$myred: #b32007;
-$baseblack: #121212;
-$basewhite: #f9f9f9;
+$myred: #b31707;
+$accent: #9da0aa;
+$baseblack: #41413e;
+$basewhite: #eae0db;
 
 $background: $basewhite;
 
@@ -77,7 +78,7 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
     src: url('/assets/font/Intro_Black_Caps-webfont.eot?#iefix') format('embedded-opentype'),
          url('/assets/font/Intro_Black_Caps-webfont.svg#intro_black_capsregular') format('svg'),
          url('/assets/font/Intro_Black_Caps-webfont.woff') format('woff'),
-         url('/assets/font/Intro_Black_Caps-webfont.ttf') format('truetype');
+         url('/assets/font/Intro_Black_Caps-w febfont.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -95,12 +96,13 @@ body {
 
 h1,h2,h3,h4,h5,h6,
 [class*="fauxh"]{
-    font-weight: bold;
+    @include intro-font;
+    font-weight: 700;
 }
 
 h1,
 .fauxh1 {
-    @include adjust-font-size-to(24px); 
+    @include adjust-font-size-to(42px);
 }
 h1:first-child,
 .fauxh1:first-child {
@@ -108,6 +110,7 @@ h1:first-child,
 
 h2,
 .fauxh2 {
+    @include adjust-font-size-to(36px);
 }
 
 h3,
@@ -193,87 +196,230 @@ $page-width: 700px;
 ----------------------------------------------------------------------------------------*/
 
 body {
-    @include intro-font;
     background: $background;
     color: $baseblack;
 }
 
-#site-header {
+.btn {
+    font-family: "intro caps";
+    @include border-radius(.5em);
+    font-weight: 700;
+    color: $basewhite;
+    background: $accent;
+    line-height: 1em;
+    padding: .6em .9em .43em;
+    text-align: center;
+    display: block;
+}
+
+a.btn {
+    &:hover,
+    &:focus {
+        background: $baseblack;
+    }
+}
+
+
+#header {
+    @include intro-font;
     background: $myred;
     color: $basewhite;
+    position: relative;
 
     &.poster {
         position:relative;
         display: table;
         width: 100%;
         overflow: hidden;
-        
-        .mast {
+
+        .constrainer {
         
             display: table-cell;
             vertical-align: middle;
-            padding: 1em 1%;
+            padding: 1em 2% .8em;
             font-size: 1.8em;
-            letter-spacing: 3px;
-            padding-bottom: .8em;
-            line-height: 1.4em;
-        
+            line-height: 1.65em;
+            letter-spacing: .1em;
+            @include clearfix;
+
+            a {color: $basewhite;}
+
             .nameplate {
                 font-weight: 900;
-                font-size: 2.2em;
-                line-height: 1em;
-                letter-spacing: .1em;
-                margin: 0 0 .2em;
-                padding: 0;
+                font-size: 1.8em;
+                line-height: 1.2em;
+                margin: 0 0 .4em;
+                padding: 0 0 .2em;
                 border-bottom: 8px solid $basewhite;
             }
+
+            .greeting {
+                display: block;
+                font-size: .6em;
+                font-weight: 700;
+                line-height: 1.6em;
+            }
             
-            a {color: $basewhite;}
-        
-        }
+            .group {
+                display: table;
+                width: 100%;
+            }
+
+            .intro {
+                display: table-cell;
+                vertical-align: top;
+                width: 20em;
+
+                h1, h2, p {
+                    font-size: 1em;
+                    line-height: 1em;
+                    font-weight: normal;
+                    display: inline;
+                }
+
+                h1, h2 {
+                    font-weight:normal;
+                }
     
+            }
+            
+            .cta {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: right;
+            }
+            
+            .btn {
+                border: 4px solid $basewhite;
+                background: transparent;
+                @include border-radius(.5em);
+                font-size: 1em;
+                display: block;
+                float: right;
+                font-weight: normal;
+
+                &:hover,
+                &:focus {
+                    background: $accent;
+                }
+            }
+        }
+    }
+
+    .scroll {
+        color: $basewhite;
+        font-weight: 900;
+        font-size: 2em;
+        line-height:.4em;
+        position: absolute;
+        left: 50%;
+        bottom: 1em;
+        text-align: center;
+        font-family: arial;
+        font-weight: bold;
+        display: block;
+        margin-left: -2em;
+        width: 4em;
+        padding: 0;
+    }
+}
+body > div {
+    padding: 4em 0;
+}
+
+body > div > section {
+    margin: 0 auto;
+    padding: 0 4%;
+    max-width: 1024px;
+}
+
+#headlines {
+    margin: 0 4%;
+    border-bottom: 2px solid $myred;
+}
+
+#headlines section {
+    @include adjust-font-size-to(42px);
+    text-align: center;
+    max-width: 650px;
+
+    .hashtag {display: block;}
+
+    img {display:none;}
+
+    a {
+        font-family: "intro caps";
+        font-size: .5em;
+        @include border-radius(.5em);
+        font-weight: 700;
+        color: $basewhite;
+        background: $accent;
+        padding: .6em .9em .45em;
+        
+        .symbol {
+            vertical-align: .075em;
+        }
+
+        &:hover,
+        &:focus {
+            background: $baseblack;
+        }
     }
 }
 
-.excess {
-    @include single-transition(all, .5s, ease-in-out, 0s)
+#features section {
+
 }
 
-$form-width: 70%;
-form.contact {
-    input, textarea {
-        padding: 0px;
-        width: $form-width;
-        display: block;
-        padding: 3px;
-        @include intro-font;
-        @include adjust-font-size-to(20px);
-        margin: 0 auto;
-        border: 2px solid gray;
+#specs {
+    background: $accent;
+    color: $basewhite;
+    padding: 2em 0;
+    
+    section{
+        display: -webkit-flex;
+        display: flex;
+        max-width: 900px;
     }
 
-    textarea {
-        height: 90px;
+    h1 {
+        width: 50%;
+        border-right: 8px solid $basewhite;
+        text-align: right;
+        padding: .5em 4% 2% 0;
+        margin-right: 4%;
+        // -webkit-flex: 1;
+        // flex: 1;
     }
 
-    textarea:focus, form input:focus {
-        border: 2px solid #999999;
+    .group {
+        width: 50%;
+        // -webkit-flex: 1;
+        // flex: 1;
     }
 
-    input.submit-button {
-        width: $form-width;
-        padding: 3px;
-        margin: 20px auto;
-        background: $baseblack;
-        color:$basewhite;
-        border:none;
+    h2 {
+        color: $baseblack;
+        @include adjust-font-size-to(16px);
+        font-weight: normal;
     }
 
-    label {
-        width: $form-width;
-        margin: 10px auto 0;
-        display: block;
-        font-size: 16px;
+    ul {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+        @include clearfix;
+        li {
+            float:left;
+            @extend .btn;
+            background: $basewhite;
+            color: $baseblack;
+            margin: 0 2% 1em 0;
+            
+            &:last-child {
+                margin-right:0;
+            }
+        }
     }
 }
 
@@ -289,11 +435,6 @@ form.contact {
 
 /*  Tablets Portrait  */
 @media screen and (max-width: 720px) {
-
-    .excess {
-        font-size: 0px;
-        color: transparent;
-    }
 
 }
 

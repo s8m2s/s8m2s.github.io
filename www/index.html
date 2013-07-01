@@ -15,58 +15,99 @@
 </head>
 <body>
     
-    <header id="site-header" class="poster">
-        <div class="mast">
-            <p>Hey, I'm </p>
-            <p class="nameplate">Scott Stamile </p>
-            <h1>a front end web developer and designer </h1>
-            <p>based in the fine suburbs of Long Island. </p>
-            <a class="btn contact" href="mailto:scottstamile@gmail.com">Send an Email</a>
+    <header id="header" class="poster mast">
+        <div class="constrainer">
+            <section class="mast">
+                <p class="nameplate"><span class="greeting">Hey, I'm </span>Scott Stamile </p>
+            </section>
+            <div class="group">
+                <section class="intro">
+                    <h1>a front end web developer and designer </h1>
+                    <p>in the fine suburbs of Long Island New York. </p>
+                </section>
+
+                <div class="cta">
+                    <a class="btn contact" href="mailto:scottstamile@gmail.com">Send an Email</a>
+                </div>
+            </div>
+
         </div>
+        <a class="scroll" href="#headlines">&mdash;<br>&ndash;<br>-</a>
     </header>
 
-    <section id="headlines">
-        
-    </section>
+    <div id="headlines">
+        <section>
+            <p><em class="hashtag">#design</em> A quote from or most recent hashed post</p>
+            <a href="#"><span class="symbol">@</span> reply</a>
+        </section>
+    </div>
 
-    <section id="specs">
-        <p class="fauxh2">Check out the specs</p>
-        <ul>
-            <li><h2>information achatecture</h2><p>some copy</p></li>
-            <li><h2>proformance</h2><p>I use the simplest solution that will achieve your goals.</p></li>
-            <li><h2>responsive</h2><p>user experience in any environment</p></li>
-            <li><h2>seo optimized</h2><p>and redundant</p></li>
-            <li><h2>clean organized code</h2><p>I use the simplest solution that will achieve your goals.</p></li>
-        </ul>
-    </section>
-    
-    <section id="work">
-        <p class="fauxh2">projects I've worked on</p>
-        <ul>
-            <li>Maylis de Gardele</li>
-            <li>Trump Tower NY</li>
-            <li>Ivanka Trump</li>
-            <li>Mitchels</li>
-        </ul>
-    </section>
+    <div id="features">
+        <section>
+            <h1>Loaded with Features</h1>
+            <ul>
+                <li><h2>responsive</h2><p>user experience in any environment</p></li>
+                <li><h2>proformance</h2><p>I use the simplest solution that will achieve your goals.</p></li>
+                <li><h2>clean organized code</h2><p>I use the simplest solution that will achieve your goals.</p></li>
+            </ul>
+        </section>
+    </div>
 
-    <section id="philosophy">
-        <h2>tast of how I work</h2>
-        <p>copy</p>
-        <ul>
-            <li><h2>item 1</h2><p>some copy</p></li>
-            <li><h2>item 2</h2><p>some copy</p></li>
-            <li><h2>item 3</h2><p>some copy</p></li>
-        </ul>
-    </section>
+    <div id="specs">
+        <section>
+            <h1>Check out the Spec Sheet</h1>
+            <div class="group">
+                <h2>Front End Languages</h2>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>js</li>
+                    <li>jquery</li>
+                    <li>sass + Compass</li>
+                </ul>
+
+                <h2>Back end stuff too</h2>
+                <ul>
+                    <li>php</li>
+                    <li>git</li>
+                    <li>linux servers</li>
+                    <li>learning ruby</li>
+                </ul>
+            </div>
+        </section>
+    </div>
     
-    <footer id="site-footer">
+    <div id="work">
+        <section>
+            <p class="fauxh2">projects I've worked on</p>
+            <ul>
+                <li>Maylis de Gardele</li>
+                <li>Trump Tower NY</li>
+                <li>Ivanka Trump</li>
+                <li>Mitchels</li>
+            </ul>
+        </section>
+    </div>
+
+    <div id="philosophy">
+        <section>
+            <h1>Things i give a shit about even if you don't</h1>
+            <p>copy</p>
+            <ul>
+                <li><h2>item 1</h2><p>some copy</p></li>
+                <li><h2>item 2</h2><p>some copy</p></li>
+                <li><h2>item 3</h2><p>some copy</p></li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer id="footer">
         <section id="contact">
             <p>At the moment, I'm working for an awesome digital marketing agency, Prime Visibility. Still, I'm always open To hear about new opportunities. Shoot me a message If you're interested in chatting about your next project.</p>
-            <a href="mailto:scottstamile@gmail.com">Send a quick Email</a>
+            <a class="btn" href="mailto:scottstamile@gmail.com">Send a quick Email</a>
         </section>
         <section id="social"></section>
-        <section id="resume">These days I feel like <a href="#">LinkedIn</a> is a more popular background check but if you absolutely insist on downloading and printing a resume, here you go. <a href="#">Download Resume</a>
+        <section id="resume">These days I feel like <a href="#">LinkedIn</a> is a more popular background check but if you absolutely insist on downloading and printing a resume, here you go. <a class="btn" href="#">Download Resume</a>
         </section>
     </footer>
     

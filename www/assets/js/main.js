@@ -1,16 +1,16 @@
 // Set the height of an eliment to fill the viewport
-var resizeContentWrapper = function () {
+var resizePoster = function () {
 
-    var target = {
+    var posters = {
         content: $('.poster')
     };
 
-    target.content.css('height', $(window).height());
+    posters.content.css('height', $(window).height());
 
 };
     
-resizeContentWrapper();
-$(window).bind('resize orientationchange', resizeContentWrapper);
+resizePoster();
+$(window).bind('resize orientationchange', resizePoster);
 
 // FlexSlider Slideshow
 //   $('.slider').flexslider({

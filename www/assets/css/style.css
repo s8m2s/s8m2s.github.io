@@ -17,9 +17,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*  SELECTION COLORS
 ----------------------------------------------------------------------------------------*/
-::selection { background: #121212; text-shadow: none; color: #ededed; }
+::selection { background: #41413e; text-shadow: none; color: #bebec1; }
 
-::-moz-selection { background: #121212; text-shadow: none; color: #ededed; }
+::-moz-selection { background: #41413e; text-shadow: none; color: #bebec1; }
 
 img::selection { background: transparent; }
 
@@ -34,7 +34,7 @@ body { -webkit-tap-highlight-color: rgba(131, 131, 131, 0.5); }
 
 @font-face { font-family: 'intro caps'; src: url("/assets/font/Intro_Bold_Caps-webfont.eot"); src: url("/assets/font/Intro_Bold_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/font/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular") format("svg"), url("/assets/font/Intro_Bold_Caps-webfont.woff") format("woff"), url("/assets/font/Intro_Bold_Caps-webfont.ttf") format("truetype"); font-weight: bold; font-style: normal; -webkit-font-smoothing: antialiased; }
 
-@font-face { font-family: 'intro caps'; src: url("/assets/font/Intro_Black_Caps-webfont.eot"); src: url("/assets/font/Intro_Black_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/font/Intro_Black_Caps-webfont.svg#intro_black_capsregular") format("svg"), url("/assets/font/Intro_Black_Caps-webfont.woff") format("woff"), url("/assets/font/Intro_Black_Caps-webfont.ttf") format("truetype"); font-weight: 900; font-style: normal; -webkit-font-smoothing: antialiased; }
+@font-face { font-family: 'intro caps'; src: url("/assets/font/Intro_Black_Caps-webfont.eot"); src: url("/assets/font/Intro_Black_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/font/Intro_Black_Caps-webfont.svg#intro_black_capsregular") format("svg"), url("/assets/font/Intro_Black_Caps-webfont.woff") format("woff"), url("/assets/font/Intro_Black_Caps-w febfont.ttf") format("truetype"); font-weight: 900; font-style: normal; -webkit-font-smoothing: antialiased; }
 
 * html { font-size: 100%; }
 
@@ -42,9 +42,11 @@ html { font-size: 16px; line-height: 1.5em; }
 
 body { font-family: Georgia, serif; }
 
-h1, h2, h3, h4, h5, h6, [class*="fauxh"] { font-weight: bold; }
+h1, h2, h3, h4, h5, h6, [class*="fauxh"] { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; font-weight: 700; }
 
-h1, .fauxh1 { font-size: 1.5em; line-height: 2em; }
+h1, .fauxh1 { font-size: 2.625em; line-height: 1.14286em; }
+
+h2, .fauxh2 { font-size: 2.25em; line-height: 1.33333em; }
 
 small { font-size: 0.5625em; line-height: 2.66667em; }
 
@@ -74,27 +76,53 @@ a:active { color: #990000; }
 ----------------------------------------------------------------------------------------*/
 /*  STYLING
 ----------------------------------------------------------------------------------------*/
-body { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; background: #f9f9f9; color: #121212; }
+body { background: #eae0db; color: #41413e; }
 
-#site-header { background: #b32007; color: #f9f9f9; }
-#site-header.poster { position: relative; display: table; width: 100%; overflow: hidden; }
-#site-header.poster .mast { display: table-cell; vertical-align: middle; padding: 1em 1%; font-size: 1.8em; letter-spacing: 3px; padding-bottom: .8em; line-height: 1.4em; }
-#site-header.poster .mast .nameplate { font-weight: 900; font-size: 2.2em; line-height: 1em; letter-spacing: .1em; margin: 0 0 .2em; padding: 0; border-bottom: 8px solid #f9f9f9; }
-#site-header.poster .mast a { color: #f9f9f9; }
+.btn, #specs ul li { font-family: "intro caps"; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-weight: 700; color: #eae0db; background: #9da0aa; line-height: 1em; padding: .6em .9em .43em; text-align: center; display: block; }
 
-.excess { -webkit-transition: all 0.5s ease-in-out; -webkit-transition-delay: 0s; -moz-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; transition: all 0.5s ease-in-out 0s; }
+a.btn:hover, a.btn:focus { background: #41413e; }
 
-form.contact input, form.contact textarea { padding: 0px; width: 70%; display: block; padding: 3px; font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; font-size: 1.25em; line-height: 1.2em; margin: 0 auto; border: 2px solid gray; }
-form.contact textarea { height: 90px; }
-form.contact textarea:focus, form.contact form input:focus { border: 2px solid #999999; }
-form.contact input.submit-button { width: 70%; padding: 3px; margin: 20px auto; background: #121212; color: #f9f9f9; border: none; }
-form.contact label { width: 70%; margin: 10px auto 0; display: block; font-size: 16px; }
+#header { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; background: #b31707; color: #eae0db; position: relative; }
+#header.poster { position: relative; display: table; width: 100%; overflow: hidden; }
+#header.poster .constrainer { display: table-cell; vertical-align: middle; padding: 1em 2% .8em; font-size: 1.8em; line-height: 1.65em; letter-spacing: .1em; overflow: hidden; *zoom: 1; }
+#header.poster .constrainer a { color: #eae0db; }
+#header.poster .constrainer .nameplate { font-weight: 900; font-size: 1.8em; line-height: 1.2em; margin: 0 0 .4em; padding: 0 0 .2em; border-bottom: 8px solid #eae0db; }
+#header.poster .constrainer .greeting { display: block; font-size: .6em; font-weight: 700; line-height: 1.6em; }
+#header.poster .constrainer .group { display: table; width: 100%; }
+#header.poster .constrainer .intro { display: table-cell; vertical-align: top; width: 20em; }
+#header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2, #header.poster .constrainer .intro p { font-size: 1em; line-height: 1em; font-weight: normal; display: inline; }
+#header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2 { font-weight: normal; }
+#header.poster .constrainer .cta { display: table-cell; vertical-align: middle; text-align: right; }
+#header.poster .constrainer .btn, #header.poster .constrainer #specs ul li, #specs ul #header.poster .constrainer li { border: 4px solid #eae0db; background: transparent; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-size: 1em; display: block; float: right; font-weight: normal; }
+#header.poster .constrainer .btn:hover, #header.poster .constrainer #specs ul li:hover, #specs ul #header.poster .constrainer li:hover, #header.poster .constrainer .btn:focus, #header.poster .constrainer #specs ul li:focus, #specs ul #header.poster .constrainer li:focus { background: #9da0aa; }
+#header .scroll { color: #eae0db; font-weight: 900; font-size: 2em; line-height: .4em; position: absolute; left: 50%; bottom: 1em; text-align: center; font-family: arial; font-weight: bold; display: block; margin-left: -2em; width: 4em; padding: 0; }
+
+body > div { padding: 4em 0; }
+
+body > div > section { margin: 0 auto; padding: 0 4%; max-width: 1024px; }
+
+#headlines { margin: 0 4%; border-bottom: 2px solid #b31707; }
+
+#headlines section { font-size: 2.625em; line-height: 1.14286em; text-align: center; max-width: 650px; }
+#headlines section .hashtag { display: block; }
+#headlines section img { display: none; }
+#headlines section a { font-family: "intro caps"; font-size: .5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-weight: 700; color: #eae0db; background: #9da0aa; padding: .6em .9em .45em; }
+#headlines section a .symbol { vertical-align: .075em; }
+#headlines section a:hover, #headlines section a:focus { background: #41413e; }
+
+#specs { background: #9da0aa; color: #eae0db; padding: 2em 0; }
+#specs section { display: -webkit-flex; display: flex; max-width: 900px; }
+#specs h1 { width: 50%; border-right: 8px solid #eae0db; text-align: right; padding: .5em 4% 2% 0; margin-right: 4%; }
+#specs .group { width: 50%; }
+#specs h2 { color: #41413e; font-size: 1em; line-height: 1.5em; font-weight: normal; }
+#specs ul { margin: 0; padding: 0; text-indent: 0; overflow: hidden; *zoom: 1; }
+#specs ul li { float: left; background: #eae0db; color: #41413e; margin: 0 2% 1em 0; }
+#specs ul li:last-child { margin-right: 0; }
 
 /*  MEDIA QUERIES
 ----------------------------------------------------------------------------------------*/
 /*  Wide Screens  */
 /*  Tablets Portrait  */
-@media screen and (max-width: 720px) { .excess { font-size: 0px; color: transparent; } }
 /*  Phone Landscape  */
 /*  Phone Portrait 400px or less  */
 /*  PRINT STYLES
