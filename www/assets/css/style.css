@@ -89,11 +89,15 @@ a.btn:hover, a.btn:focus { background: #41413e; }
 #header.poster .constrainer .nameplate { font-weight: 900; font-size: 1.8em; line-height: 1.2em; margin: 0 0 .4em; padding: 0 0 .2em; border-bottom: 8px solid #eae0db; }
 #header.poster .constrainer .greeting { display: block; font-size: .6em; font-weight: 700; line-height: 1.6em; }
 #header.poster .constrainer .group { display: table; width: 100%; }
+@media (min-width: 420px) and (max-width: 960px) { #header.poster .constrainer .group { display: block; } }
 #header.poster .constrainer .intro { display: table-cell; vertical-align: top; width: 20em; }
+@media (min-width: 420px) and (max-width: 960px) { #header.poster .constrainer .intro { display: block; } }
 #header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2, #header.poster .constrainer .intro p { font-size: 1em; line-height: 1em; font-weight: normal; display: inline; }
 #header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2 { font-weight: normal; }
 #header.poster .constrainer .cta { display: table-cell; vertical-align: middle; text-align: right; }
+@media (min-width: 420px) and (max-width: 960px) { #header.poster .constrainer .cta { display: block; text-align: center; } }
 #header.poster .constrainer .btn, #header.poster .constrainer #specs ul li, #specs ul #header.poster .constrainer li { border: 4px solid #eae0db; background: transparent; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-size: 1em; display: block; float: right; font-weight: normal; }
+@media (min-width: 420px) and (max-width: 960px) { #header.poster .constrainer .btn, #header.poster .constrainer #specs ul li, #specs ul #header.poster .constrainer li { display: inline-block; float: none; margin: 1em 2%; } }
 #header.poster .constrainer .btn:hover, #header.poster .constrainer #specs ul li:hover, #specs ul #header.poster .constrainer li:hover, #header.poster .constrainer .btn:focus, #header.poster .constrainer #specs ul li:focus, #specs ul #header.poster .constrainer li:focus { background: #9da0aa; }
 #header .scroll { color: #eae0db; font-weight: 900; font-size: 2em; line-height: .4em; position: absolute; left: 50%; bottom: 1em; text-align: center; font-family: arial; font-weight: bold; display: block; margin-left: -2em; width: 4em; padding: 0; }
 
@@ -110,10 +114,10 @@ body > div > section { margin: 0 auto; padding: 0 4%; max-width: 1024px; }
 #headlines section a .symbol { vertical-align: .075em; }
 #headlines section a:hover, #headlines section a:focus { background: #41413e; }
 
-#specs { background: #9da0aa; color: #eae0db; padding: 2em 0; }
+#specs { background: #9da0aa; color: #eae0db; padding: 2em 0; overflow: hidden; *zoom: 1; }
 #specs section { display: -webkit-flex; display: flex; max-width: 900px; }
-#specs h1 { width: 50%; border-right: 8px solid #eae0db; text-align: right; padding: .5em 4% 2% 0; margin-right: 4%; }
-#specs .group { width: 50%; }
+#specs h1 { text-align: right; width: 40%; float: left; padding-top: .5em; }
+#specs .group { float: right; width: 50%; border-left: 8px solid #eae0db; padding: .5em 0 2% 4%; margin-left: 4%; }
 #specs h2 { color: #41413e; font-size: 1em; line-height: 1.5em; font-weight: normal; }
 #specs ul { margin: 0; padding: 0; text-indent: 0; overflow: hidden; *zoom: 1; }
 #specs ul li { float: left; background: #eae0db; color: #41413e; margin: 0 2% 1em 0; }

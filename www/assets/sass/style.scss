@@ -191,6 +191,8 @@ a {
 
 $page-width: 700px;
 
+$tabScape: 420px 960px;
+
 
 /*  STYLING
 ----------------------------------------------------------------------------------------*/
@@ -240,7 +242,7 @@ a.btn {
             font-size: 1.8em;
             line-height: 1.65em;
             letter-spacing: .1em;
-            @include clearfix;
+            @include clearfix;            
 
             a {color: $basewhite;}
 
@@ -263,12 +265,20 @@ a.btn {
             .group {
                 display: table;
                 width: 100%;
+                @include breakpoint($tabScape) {
+                    display: block;
+                }
+                
             }
 
             .intro {
                 display: table-cell;
                 vertical-align: top;
                 width: 20em;
+                
+                @include breakpoint($tabScape) {
+                    display: block;
+                }
 
                 h1, h2, p {
                     font-size: 1em;
@@ -287,6 +297,12 @@ a.btn {
                 display: table-cell;
                 vertical-align: middle;
                 text-align: right;
+                
+                @include breakpoint($tabScape) {
+                    display: block;
+                    text-align: center;
+                }
+                
             }
             
             .btn {
@@ -297,6 +313,12 @@ a.btn {
                 display: block;
                 float: right;
                 font-weight: normal;
+
+                @include breakpoint($tabScape) {
+                    display: inline-block;
+                    float: none;
+                    margin: 1em 2%;
+                }
 
                 &:hover,
                 &:focus {
@@ -375,6 +397,7 @@ body > div > section {
     background: $accent;
     color: $basewhite;
     padding: 2em 0;
+    @include clearfix;
     
     section{
         display: -webkit-flex;
@@ -383,17 +406,20 @@ body > div > section {
     }
 
     h1 {
-        width: 50%;
-        border-right: 8px solid $basewhite;
         text-align: right;
-        padding: .5em 4% 2% 0;
-        margin-right: 4%;
+        width: 40%;
+        float: left;
+        padding-top: .5em;
         // -webkit-flex: 1;
         // flex: 1;
     }
 
     .group {
+        float: right;
         width: 50%;
+        border-left: 8px solid $basewhite;
+        padding: .5em 0 2% 4%;
+        margin-left: 4%;
         // -webkit-flex: 1;
         // flex: 1;
     }
