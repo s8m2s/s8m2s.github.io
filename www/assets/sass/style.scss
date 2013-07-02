@@ -18,17 +18,17 @@
 //  COLORS
 //----------------------------------------------------------------------------------------
 
-$myred: #b31707;
-$accent: #9da0aa;
-$baseblack: #41413e;
-$basewhite: #eae0db;
+$color-red: #b31707;
+$color-blue: #9da0aa;
+$color-black: #41413e;
+$color-white: #eae0db;
 
-$background: $basewhite;
+$background: $color-white;
 
 /*  SELECTION COLORS
 ----------------------------------------------------------------------------------------*/
 
-$selection-color: $baseblack;
+$selection-color: $color-black;
 $selection-text: invert($selection-color);
 ::selection {
     background: $selection-color;
@@ -83,6 +83,30 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
     font-style: normal;
     -webkit-font-smoothing: antialiased;
 }
+
+@font-face {
+    font-family: 'icons';
+    src:url('/assets/font/icons.eot');
+    src:url('/assets/font/icons.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/icons.woff') format('woff'),
+        url('/assets/font/icons.ttf') format('truetype'),
+        url('/assets/font/icons.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+    font-family: 'icons';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
 @mixin intro-font {
     font-family: 'intro caps', arial, sans-serif;
     text-transform: uppercase;
@@ -191,7 +215,7 @@ a {
 
 $page-width: 700px;
 
-$tabScape: 420px 960px;
+$tabScape: 960px;
 
 
 /*  STYLING
@@ -199,15 +223,15 @@ $tabScape: 420px 960px;
 
 body {
     background: $background;
-    color: $baseblack;
+    color: $color-black;
 }
 
 .btn {
     font-family: "intro caps";
     @include border-radius(.5em);
     font-weight: 700;
-    color: $basewhite;
-    background: $accent;
+    color: $color-white;
+    background: $color-blue;
     line-height: 1em;
     padding: .6em .9em .43em;
     text-align: center;
@@ -217,15 +241,15 @@ body {
 a.btn {
     &:hover,
     &:focus {
-        background: $baseblack;
+        background: $color-black;
     }
 }
 
 
 #header {
     @include intro-font;
-    background: $myred;
-    color: $basewhite;
+    background: $color-red;
+    color: $color-white;
     position: relative;
 
     &.poster {
@@ -244,7 +268,7 @@ a.btn {
             letter-spacing: .1em;
             @include clearfix;            
 
-            a {color: $basewhite;}
+            a {color: $color-white;}
 
             .nameplate {
                 font-weight: 900;
@@ -252,7 +276,7 @@ a.btn {
                 line-height: 1.2em;
                 margin: 0 0 .4em;
                 padding: 0 0 .2em;
-                border-bottom: 8px solid $basewhite;
+                border-bottom: 8px solid $color-white;
             }
 
             .greeting {
@@ -263,21 +287,22 @@ a.btn {
             }
             
             .group {
-                display: table;
-                width: 100%;
+                display: block;
                 @include breakpoint($tabScape) {
-                    display: block;
+                    display: table;
+                    width: 100%;
                 }
                 
             }
 
             .intro {
-                display: table-cell;
+                display: block;
                 vertical-align: top;
-                width: 20em;
+                max-width: 20em;
                 
                 @include breakpoint($tabScape) {
-                    display: block;
+                    display: table-cell;
+                    width: 20em;
                 }
 
                 h1, h2, p {
@@ -294,42 +319,43 @@ a.btn {
             }
             
             .cta {
-                display: table-cell;
                 vertical-align: middle;
-                text-align: right;
+                display: block;
+                text-align: center;
                 
                 @include breakpoint($tabScape) {
-                    display: block;
-                    text-align: center;
+                    display: table-cell;
+                    text-align: right;
                 }
                 
             }
             
             .btn {
-                border: 4px solid $basewhite;
+                border: 4px solid $color-white;
                 background: transparent;
                 @include border-radius(.5em);
                 font-size: 1em;
-                display: block;
-                float: right;
+                display: inline-block;
                 font-weight: normal;
+                margin: 1em 2%;
+                float: none;
 
                 @include breakpoint($tabScape) {
-                    display: inline-block;
-                    float: none;
-                    margin: 1em 2%;
+                    display: block;
+                    float: right;
+                    margin: 0;
                 }
 
                 &:hover,
                 &:focus {
-                    background: $accent;
+                    background: $color-blue;
                 }
             }
         }
     }
 
     .scroll {
-        color: $basewhite;
+        color: $color-white;
         font-weight: 900;
         font-size: 2em;
         line-height:.4em;
@@ -357,7 +383,7 @@ body > div > section {
 
 #headlines {
     margin: 0 4%;
-    border-bottom: 2px solid $myred;
+    border-bottom: 2px solid $color-red;
 }
 
 #headlines section {
@@ -374,8 +400,8 @@ body > div > section {
         font-size: .5em;
         @include border-radius(.5em);
         font-weight: 700;
-        color: $basewhite;
-        background: $accent;
+        color: $color-white;
+        background: $color-blue;
         padding: .6em .9em .45em;
         
         .symbol {
@@ -384,18 +410,56 @@ body > div > section {
 
         &:hover,
         &:focus {
-            background: $baseblack;
+            background: $color-black;
         }
     }
 }
 
-#features section {
+#features {
+    section {
 
+        max-width: 1440px;
+        
+        ul {
+
+            padding: 0;
+            margin: 0;
+            display: table;
+            width: 100%;
+
+            li {
+
+                text-align: center;
+                margin-left: 4%;
+                width: 33%;
+                display: table-cell;
+                padding: .5em;
+            }
+        }
+
+        .icon {
+            background: $color-red;
+            font-size: 5.6em;
+            @include border-radius(1.25em);
+            width: 2em;
+            height: 2em;
+            margin: .5em auto;
+            text-align: center;
+            color: $color-white;
+            line-height: 2.16em;
+        }
+        h2 {
+            white-space: nowrap; 
+        }
+        p {
+            @include adjust-font-size-to(18px);
+        }
+    }
 }
 
 #specs {
-    background: $accent;
-    color: $basewhite;
+    background: $color-blue;
+    color: $color-white;
     padding: 2em 0;
     @include clearfix;
     
@@ -417,7 +481,7 @@ body > div > section {
     .group {
         float: right;
         width: 50%;
-        border-left: 8px solid $basewhite;
+        border-left: 8px solid $color-white;
         padding: .5em 0 2% 4%;
         margin-left: 4%;
         // -webkit-flex: 1;
@@ -425,7 +489,7 @@ body > div > section {
     }
 
     h2 {
-        color: $baseblack;
+        color: $color-black;
         @include adjust-font-size-to(16px);
         font-weight: normal;
     }
@@ -438,8 +502,8 @@ body > div > section {
         li {
             float:left;
             @extend .btn;
-            background: $basewhite;
-            color: $baseblack;
+            background: $color-white;
+            color: $color-black;
             margin: 0 2% 1em 0;
             
             &:last-child {
