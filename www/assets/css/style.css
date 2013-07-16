@@ -108,18 +108,17 @@ a.btn:hover, a.btn:focus { background: #41413e; }
 
 body > div { padding: 4em 0; }
 
-body > div > section { margin: 0 auto; padding: 0 4%; max-width: 1024px; }
+body > div > section { margin: 0 auto; padding: 0 4%; }
 
 #headlines { margin: 0 4%; border-bottom: 2px solid #b31707; }
 
-#headlines section { font-size: 2.625em; line-height: 1.14286em; text-align: center; max-width: 650px; }
+#headlines section { font-size: 2.625em; line-height: 1.14286em; text-align: center; }
 #headlines section .hashtag { display: block; }
 #headlines section img { display: none; }
 #headlines section a { font-family: "intro caps"; font-size: .5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-weight: 700; color: #eae0db; background: #9da0aa; padding: .6em .9em .45em; }
 #headlines section a .symbol { vertical-align: .075em; }
 #headlines section a:hover, #headlines section a:focus { background: #41413e; }
 
-#features section { max-width: 1440px; }
 #features section ul { padding: 0; margin: 0; display: table; width: 100%; }
 #features section ul li { text-align: center; margin-left: 4%; width: 33%; display: table-cell; padding: .5em; }
 #features section .icon { background: #b31707; font-size: 5.6em; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; width: 2em; height: 2em; margin: .5em auto; text-align: center; color: #eae0db; line-height: 2.16em; }
@@ -127,7 +126,7 @@ body > div > section { margin: 0 auto; padding: 0 4%; max-width: 1024px; }
 #features section p { font-size: 1.125em; line-height: 1.33333em; }
 
 #specs { background: #9da0aa; color: #eae0db; padding: 2em 0; overflow: hidden; *zoom: 1; }
-#specs section { display: -webkit-flex; display: flex; max-width: 900px; }
+#specs section { display: -webkit-flex; display: flex; }
 #specs h1 { text-align: right; width: 40%; float: left; padding-top: .5em; }
 #specs .group { float: right; width: 50%; border-left: 8px solid #eae0db; padding: .5em 0 2% 4%; margin-left: 4%; }
 #specs h2 { color: #41413e; font-size: 1em; line-height: 1.5em; font-weight: normal; }
