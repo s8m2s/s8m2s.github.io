@@ -7,6 +7,7 @@ Project Setup:
 - [x] git
 - [x] structure
 - [x] compass
+- [ ] test push from orchard
 
 Design:
 - [x] look for designs
