@@ -119,11 +119,8 @@ body > div > section { margin: 0 auto; padding: 0 4%; }
 #headlines section a .symbol { vertical-align: .075em; }
 #headlines section a:hover, #headlines section a:focus { background: #41413e; }
 
-#features section ul { padding: 0; margin: 0; display: table; width: 100%; }
-#features section ul li { text-align: center; margin-left: 4%; width: 33%; display: table-cell; padding: .5em; }
-#features section .icon { background: #b31707; font-size: 5.6em; -webkit-border-radius: 1.25em; -moz-border-radius: 1.25em; -ms-border-radius: 1.25em; -o-border-radius: 1.25em; border-radius: 1.25em; width: 2em; height: 2em; margin: .5em auto; text-align: center; color: #eae0db; line-height: 2.16em; }
-#features section h2 { white-space: nowrap; }
-#features section p { font-size: 1.125em; line-height: 1.33333em; }
+#features section ul { padding: 0; margin: 0; }
+#features section [data-icon] { display: block; float: left; background: #b31707; color: #eae0db; width: 4em; height: 4em; text-align: center; line-height: 4em; margin-right: 1em; -webkit-border-radius: 2em; -moz-border-radius: 2em; -ms-border-radius: 2em; -o-border-radius: 2em; border-radius: 2em; }
 
 #specs { background: #9da0aa; color: #eae0db; padding: 2em 0; overflow: hidden; *zoom: 1; }
 #specs section { display: -webkit-flex; display: flex; }

@@ -417,42 +417,27 @@ body > div > section {
 
 #features {
     section {
-
-        // max-width: 1440px;
-        
         ul {
-
             padding: 0;
             margin: 0;
-            display: table;
-            width: 100%;
-
             li {
-
-                text-align: center;
-                margin-left: 4%;
-                width: 33%;
-                display: table-cell;
-                padding: .5em;
             }
         }
-
-        .icon {
-            background: $color-red;
-            font-size: 5.6em;
-            @include border-radius(1.25em);
-            width: 2em;
-            height: 2em;
-            margin: .5em auto;
-            text-align: center;
-            color: $color-white;
-            line-height: 2.16em;
-        }
+       	[data-icon] {
+      		display: block;
+      		float: left;
+      		background: $color-red;
+      		color: $color-white;
+      		width: 4em;
+      		height: 4em;
+      		text-align: center;
+					line-height: 4em;
+					margin-right: 1em;
+      		@include border-radius(2em);
+      	}
         h2 {
-            white-space: nowrap; 
         }
         p {
-            @include adjust-font-size-to(18px);
         }
     }
 }
