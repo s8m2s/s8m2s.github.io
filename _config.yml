@@ -1,0 +1,8 @@
+name: Your New Jekyll Site
+pygments: true
+
+exclude:
+  - config.rb
+  - Gemfile
+  - Gemfile.lock
+  - README.md

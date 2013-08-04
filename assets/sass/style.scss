@@ -1,0 +1,528 @@
+//  IMPORTS
+//----------------------------------------------------------------------------------------
+
+@import "base";
+
+
+//  GRID SETUP
+//----------------------------------------------------------------------------------------
+
+// $total-columns  : 12;
+// $column-width   : 60px;
+// $gutter-width   : 20px;
+// $grid-padding   : $gutter-width;
+
+// $show-grid-backgrounds  : true;
+
+
+//  COLORS
+//----------------------------------------------------------------------------------------
+
+$color-red: #b31707;
+$color-blue: #9da0aa;
+$color-black: #41413e;
+$color-white: #eae0db;
+
+$background: $color-white;
+
+/*  SELECTION COLORS
+----------------------------------------------------------------------------------------*/
+
+$selection-color: $color-black;
+$selection-text: invert($selection-color);
+::selection {
+    background: $selection-color;
+    text-shadow: none;
+    color: $selection-text;
+}
+::-moz-selection {
+    background: $selection-color;
+    text-shadow: none;
+    color: $selection-text;
+}
+img::selection      {background: transparent;}
+img::-moz-selection {background: transparent;}
+body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
+
+
+/*  TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+/* NOTE: Loading svg before ttf for better rendering in chrome for windows */
+@font-face {
+    font-family: 'intro caps';
+    src: url('/assets/font/Intro_Regular_Caps-webfont.eot');
+    src: url('/assets/font/Intro_Regular_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular') format('svg'),
+         url('/assets/font/Intro_Regular_Caps-webfont.woff') format('woff'),
+         url('/assets/font/Intro_Regular_Caps-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'intro caps';
+    src: url('/assets/font/Intro_Bold_Caps-webfont.eot');
+    src: url('/assets/font/Intro_Bold_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular') format('svg'),
+         url('/assets/font/Intro_Bold_Caps-webfont.woff') format('woff'),
+         url('/assets/font/Intro_Bold_Caps-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'intro caps';
+    src: url('/assets/font/Intro_Black_Caps-webfont.eot');
+    src: url('/assets/font/Intro_Black_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Intro_Black_Caps-webfont.svg#intro_black_capsregular') format('svg'),
+         url('/assets/font/Intro_Black_Caps-webfont.woff') format('woff'),
+         url('/assets/font/Intro_Black_Caps-w febfont.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'icons';
+    src:url('/assets/font/icons.eot');
+    src:url('/assets/font/icons.eot?#iefix') format('embedded-opentype'),
+        url('/assets/font/icons.woff') format('woff'),
+        url('/assets/font/icons.ttf') format('truetype'),
+        url('/assets/font/icons.svg#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+    font-family: 'icons';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+@mixin intro-font {
+    font-family: 'intro caps', arial, sans-serif;
+    text-transform: uppercase;
+}
+
+@include establish-baseline;
+
+body {
+    font-family: Georgia, serif;
+}
+
+h1,h2,h3,h4,h5,h6,
+[class*="fauxh"]{
+    @include intro-font;
+    font-weight: 700;
+}
+
+h1,
+.fauxh1 {
+    @include adjust-font-size-to(42px);
+}
+h1:first-child,
+.fauxh1:first-child {
+}
+
+h2,
+.fauxh2 {
+    @include adjust-font-size-to(36px);
+}
+
+h3,
+.fauxh3 {
+}
+
+h4,
+.fauxh4 {}
+
+h5,
+.fauxh5 {}
+
+h6,
+.fauxh6 {}
+
+small {@include adjust-font-size-to(9px);}
+
+code,
+pre {
+    font-family: Monaco, 'Courier New', monospace;
+    @include rhythm-borders(1px);
+}
+
+sup,
+sub {line-height: 0em;}
+sup {vertical-align: super;}
+sub {vertical-align: sub;}
+
+i,
+em {font-style: italic;}
+
+b,
+strong {font-weight: bold;}
+
+p {}
+
+blockquote {}
+
+figure {}
+
+figure-caption {}
+
+ol, ul {
+    padding-left: 1.8em;
+}
+
+li {}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*  LINKS
+----------------------------------------------------------------------------------------*/
+
+a {
+    color: #3f3f3f;
+    text-decoration: none;
+    &:hover, &:focus {
+        color: #000;
+        border-color: #000;
+    }
+
+    &:active {
+        color: #990000;
+    }
+}
+
+
+/*  LAYOUT
+----------------------------------------------------------------------------------------*/
+
+$page-width: 700px;
+
+$tabScape: 960px;
+
+
+/*  STYLING
+----------------------------------------------------------------------------------------*/
+
+body {
+    background: $background;
+    color: $color-black;
+}
+
+.btn {
+    font-family: "intro caps";
+    @include border-radius(.5em);
+    font-weight: 700;
+    color: $color-white;
+    background: $color-blue;
+    line-height: 1em;
+    padding: .6em .9em .43em;
+    text-align: center;
+    display: block;
+}
+
+a.btn {
+    &:hover,
+    &:focus {
+        background: $color-black;
+    }
+}
+
+
+#header {
+    @include intro-font;
+    background: $color-red;
+    color: $color-white;
+    position: relative;
+
+    &.poster {
+        position:relative;
+        display: table;
+        width: 100%;
+        overflow: hidden;
+
+        .constrainer {
+        
+            display: table-cell;
+            vertical-align: middle;
+            padding: 1em 2% .8em;
+            font-size: 1.8em;
+            line-height: 1.65em;
+            letter-spacing: .1em;
+            @include clearfix;            
+
+            a {color: $color-white;}
+
+            .nameplate {
+                font-weight: 900;
+                font-size: 1.8em;
+                line-height: 1.2em;
+                margin: 0 0 .4em;
+                padding: 0 0 .2em;
+                border-bottom: 8px solid $color-white;
+            }
+
+            .greeting {
+                display: block;
+                font-size: .6em;
+                font-weight: 700;
+                line-height: 1.6em;
+            }
+            
+            .group {
+                display: block;
+                @include breakpoint($tabScape) {
+                    display: table;
+                    width: 100%;
+                }
+                
+            }
+
+            .intro {
+                display: block;
+                vertical-align: top;
+                max-width: 20em;
+                
+                @include breakpoint($tabScape) {
+                    display: table-cell;
+                    width: 20em;
+                }
+
+                h1, h2, p {
+                    font-size: 1em;
+                    line-height: 1em;
+                    font-weight: normal;
+                    display: inline;
+                }
+
+                h1, h2 {
+                    font-weight:normal;
+                }
+    
+            }
+            
+            .cta {
+                vertical-align: middle;
+                display: block;
+                text-align: center;
+                
+                @include breakpoint($tabScape) {
+                    display: table-cell;
+                    text-align: right;
+                }
+                
+            }
+            
+            .btn {
+                border: 4px solid $color-white;
+                background: transparent;
+                @include border-radius(.5em);
+                font-size: 1em;
+                display: inline-block;
+                font-weight: normal;
+                margin: 1em 2%;
+                float: none;
+
+                @include breakpoint($tabScape) {
+                    display: block;
+                    float: right;
+                    margin: 0;
+                }
+
+                &:hover,
+                &:focus {
+                    background: $color-blue;
+                }
+            }
+        }
+    }
+
+    .scroll {
+        color: $color-white;
+        font-weight: 900;
+        font-size: 2em;
+        line-height:.4em;
+        position: absolute;
+        left: 50%;
+        bottom: 1em;
+        text-align: center;
+        font-family: arial;
+        font-weight: bold;
+        display: block;
+        margin-left: -2em;
+        width: 4em;
+        padding: 0;
+    }
+}
+body > div {
+    padding: 4em 0;
+}
+
+body > div > section {
+    margin: 0 auto;
+    padding: 0 4%;
+    // max-width: 1024px;
+}
+
+#headlines {
+    margin: 0 4%;
+    border-bottom: 2px solid $color-red;
+}
+
+#headlines section {
+    @include adjust-font-size-to(42px);
+    text-align: center;
+    // max-width: 650px;
+
+    .hashtag {display: block;}
+
+    img {display:none;}
+
+    a {
+        font-family: "intro caps";
+        font-size: .5em;
+        @include border-radius(.5em);
+        font-weight: 700;
+        color: $color-white;
+        background: $color-blue;
+        padding: .6em .9em .45em;
+        
+        .symbol {
+            vertical-align: .075em;
+        }
+
+        &:hover,
+        &:focus {
+            background: $color-black;
+        }
+    }
+}
+
+#features {
+    section {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+            }
+        }
+       	[data-icon] {
+      		display: block;
+      		float: left;
+      		background: $color-red;
+      		color: $color-white;
+      		width: 4em;
+      		height: 4em;
+      		text-align: center;
+					line-height: 4em;
+					margin-right: 1em;
+      		@include border-radius(2em);
+      	}
+        h2 {
+        }
+        p {
+        }
+    }
+}
+
+#specs {
+    background: $color-blue;
+    color: $color-white;
+    padding: 2em 0;
+    @include clearfix;
+    
+    section{
+        display: -webkit-flex;
+        display: flex;
+       // max-width: 900px;
+    }
+
+    h1 {
+        text-align: right;
+        width: 40%;
+        float: left;
+        padding-top: .5em;
+        // -webkit-flex: 1;
+        // flex: 1;
+    }
+
+    .group {
+        float: right;
+        width: 50%;
+        border-left: 8px solid $color-white;
+        padding: .5em 0 2% 4%;
+        margin-left: 4%;
+        // -webkit-flex: 1;
+        // flex: 1;
+    }
+
+    h2 {
+        color: $color-black;
+        @include adjust-font-size-to(16px);
+        font-weight: normal;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+        @include clearfix;
+        li {
+            float:left;
+            @extend .btn;
+            background: $color-white;
+            color: $color-black;
+            margin: 0 2% 1em 0;
+            
+            &:last-child {
+                margin-right:0;
+            }
+        }
+    }
+}
+
+
+/*  MEDIA QUERIES
+----------------------------------------------------------------------------------------*/
+
+/*  Wide Screens  */
+@media screen and (min-width: 1300px) {
+
+
+}
+
+/*  Tablets Portrait  */
+@media screen and (max-width: 720px) {
+
+}
+
+/*  Phone Landscape  */
+@media screen and (max-width: 35.5em) {
+
+
+}
+
+/*  Phone Portrait 400px or less  */
+@media screen and (max-width: 25em) {
+
+
+}
+
+@import 'print';
