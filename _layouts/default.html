@@ -1,46 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <link rel="author" href="/humans.txt" />
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
 
-    </head>
-    <body>
+  <script type="text/javascript" src="/javascripts/vendor/modernizr-2.6.2.dev.js"></script>
+</head>
+<body>
+ 
+  {% unless page.header == 'poster' %}
+  <header id="header" class="mast">
+        <div class="nameplate">Scott Stamile</div>
+  </header>
+  {% endunless %}
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+  <nav>
+    <ul>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="mailto:scottstamile@gmail.com">Send Email</a></li>
+    </ul>
+  </nav>
 
-                {{ content }}
+    {{ content }}
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> <!-- /container -->
+  <footer id="footer">
+    <section id="contact">
+      <p>At the moment, I'm working for an awesome digital marketing agency, Prime Visibility. Still, I'm always open To hear about new opportunities. Shoot me a message If you're interested in chatting about your next project.</p>
+      <a class="btn" href="mailto:scottstamile@gmail.com">Send a quick Email</a>
+    </section>
+    <section id="social"></section>
+    <section id="resume">These days I feel like <a href="#">LinkedIn</a> is a more popular background check but if you absolutely insist on downloading and printing a resume, here you go. <a class="btn" href="#">Download Resume</a>
+    </section>
+  </footer>
 
-    </body>
+  <!-- REMINDER: remove live.js before live deployment -->
+  <!-- <script type="text/javascript" src="javascripts/vendor/live.js"></script> -->
+
+  <script type="text/javascript" src="/javascripts/vendor/jquery-1.10.2.js"></script>
+  <script type="text/javascript" src="/javascripts/main.js"></script>
+
+</body>
 </html>

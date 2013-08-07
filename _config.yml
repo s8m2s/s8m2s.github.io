@@ -1,5 +1,8 @@
-name: Your New Jekyll Site
+name: Scott Stamile Front end Web Developer and Designer
+safe: true
 pygments: true
+
+permalink: /blog/:categories/:title
 
 exclude:
   - config.rb

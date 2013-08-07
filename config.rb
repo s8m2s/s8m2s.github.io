@@ -2,18 +2,21 @@
 require 'breakpoint'
 
 # Set this to the root of your project when deployed:
-http_path = "www/assets/"
-css_dir = "www/assets/css"
-sass_dir = "www/assets/sass"
-images_dir = "www/assets/img"
-javascripts_dir = "www/assets/js"
+http_path = "/"
+css_dir = "stylesheets"
+sass_dir = "stylesheets/sass"
+images_dir = "images"
+javascripts_dir = "javascripts"
+# sass_options = { :debug_info => true }
+# sass_options = { :sourcemap => true }
+# enable_sourcemaps = true
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
 output_style = :compact
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = false
