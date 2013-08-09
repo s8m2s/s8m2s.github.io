@@ -310,32 +310,22 @@ body { -webkit-tap-highlight-color: rgba(131, 131, 131, 0.5); }
 /*  TYPOGRAPHY
 ----------------------------------------------------------------------------------------*/
 /* NOTE: Loading svg before ttf for better rendering in chrome for windows */
-@font-face { font-family: 'intro caps'; src: url("../fonts/Intro_Regular_Caps-webfont.eot"); src: url("../fonts/Intro_Regular_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular") format("svg"), url("../fonts/Intro_Regular_Caps-webfont.woff") format("woff"), url("../fonts/Intro_Regular_Caps-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; -webkit-font-smoothing: antialiased; }
+@font-face { font-family: 'intro caps'; src: url("/fonts/Intro_Regular_Caps-webfont.eot"); src: url("/fonts/Intro_Regular_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular") format("svg"), url("/fonts/Intro_Regular_Caps-webfont.woff") format("woff"), url("/fonts/Intro_Regular_Caps-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; -webkit-font-smoothing: antialiased; }
 
-@font-face { font-family: 'intro caps'; src: url("../fonts/Intro_Bold_Caps-webfont.eot"); src: url("../fonts/Intro_Bold_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular") format("svg"), url("../fonts/Intro_Bold_Caps-webfont.woff") format("woff"), url("../fonts/Intro_Bold_Caps-webfont.ttf") format("truetype"); font-weight: bold; font-style: normal; -webkit-font-smoothing: antialiased; }
+@font-face { font-family: 'intro caps'; src: url("/fonts/Intro_Bold_Caps-webfont.eot"); src: url("/fonts/Intro_Bold_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular") format("svg"), url("/fonts/Intro_Bold_Caps-webfont.woff") format("woff"), url("/fonts/Intro_Bold_Caps-webfont.ttf") format("truetype"); font-weight: bold; font-style: normal; -webkit-font-smoothing: antialiased; }
 
-@font-face { font-family: 'intro caps'; src: url("../fonts/Intro_Black_Caps-webfont.eot"); src: url("../fonts/Intro_Black_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro_Black_Caps-webfont.svg#intro_black_capsregular") format("svg"), url("../fonts/Intro_Black_Caps-webfont.woff") format("woff"), url("../fonts/Intro_Black_Caps-w febfont.ttf") format("truetype"); font-weight: 900; font-style: normal; -webkit-font-smoothing: antialiased; }
+@font-face { font-family: 'intro caps'; src: url("/fonts/Intro_Black_Caps-webfont.eot"); src: url("/fonts/Intro_Black_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Intro_Black_Caps-webfont.svg#intro_black_capsregular") format("svg"), url("/fonts/Intro_Black_Caps-webfont.woff") format("woff"), url("/fonts/Intro_Black_Caps-w febfont.ttf") format("truetype"); font-weight: 900; font-style: normal; -webkit-font-smoothing: antialiased; }
 
-@font-face { font-family: 'icons'; src: url("../fonts/icons.eot"); src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'icons'; src: url("/fonts/icons.eot"); src: url("/fonts/icons.eot?#iefix") format("embedded-opentype"), url("/fonts/icons.woff") format("woff"), url("/fonts/icons.ttf") format("truetype"), url("/fonts/icons.svg#icons") format("svg"); font-weight: normal; font-style: normal; }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before { font-family: 'icons'; content: attr(data-icon); speak: none; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
-
-* html { font-size: 100%; }
-
-html { font-size: 16px; line-height: 1.5em; }
 
 body { font-family: Georgia, serif; }
 
 h1, h2, h3, h4, h5, h6, [class*="fauxh"] { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; font-weight: 700; }
 
-h1, .fauxh1 { font-size: 2.625em; line-height: 1.14286em; }
-
-h2, .fauxh2 { font-size: 2.25em; line-height: 1.33333em; }
-
-small { font-size: 0.5625em; line-height: 2.66667em; }
-
-code, pre { font-family: Monaco, 'Courier New', monospace; border-style: solid; border-width: 0.0625em; padding: 1.4375em; }
+code, pre { font-family: Monaco, 'Courier New', monospace; }
 
 sup, sub { line-height: 0em; }
 
@@ -367,36 +357,33 @@ body { background: #eae0db; color: #41413e; }
 
 a.btn:hover, a.btn:focus { background: #41413e; }
 
-nav { position: fixed; top: 0px; left: 0px; }
+.nameplate { font-weight: 900; font-size: 1.8em; line-height: 1.2em; margin: 0 0 .4em; padding: 0 0 .2em; }
+
+nav { background: #421b16; text-align: right; padding: .8em 2% .6em; }
+nav .nameplate { text-align: left; float: left; font-size: 1em; }
+nav h2 { display: none; }
 nav ul { margin: 0; padding: 0; border: 0; overflow: hidden; *zoom: 1; }
 nav ul li { list-style-image: none; list-style-type: none; margin-left: 0; display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; white-space: nowrap; }
+nav a { color: #eae0db; }
 
 #header { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; background: #b31707; color: #eae0db; position: relative; }
-#header.poster { position: relative; display: table; width: 100%; overflow: hidden; }
-#header.poster .constrainer { display: table-cell; vertical-align: middle; padding: 1em 2% .8em; font-size: 1.8em; line-height: 1.65em; letter-spacing: .1em; overflow: hidden; *zoom: 1; }
+#header.poster .constrainer { margin: 0 2% 1em; padding-top: 1em; font-size: 1em; line-height: 1.65em; letter-spacing: .1em; }
 #header.poster .constrainer a { color: #eae0db; }
-#header.poster .constrainer .nameplate { font-weight: 900; font-size: 1.8em; line-height: 1.2em; margin: 0 0 .4em; padding: 0 0 .2em; border-bottom: 8px solid #eae0db; }
+#header.poster .constrainer .nameplate { border-bottom: 8px solid #eae0db; text-shadow: 0.06em 0.06em 0px #961306; }
 #header.poster .constrainer .greeting { display: block; font-size: .6em; font-weight: 700; line-height: 1.6em; }
-#header.poster .constrainer .group { display: block; }
-@media (min-width: 960px) { #header.poster .constrainer .group { display: table; width: 100%; } }
 #header.poster .constrainer .intro { display: block; vertical-align: top; max-width: 20em; }
-@media (min-width: 960px) { #header.poster .constrainer .intro { display: table-cell; width: 20em; } }
 #header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2, #header.poster .constrainer .intro p { font-size: 1em; line-height: 1em; font-weight: normal; display: inline; }
 #header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2 { font-weight: normal; }
-#header.poster .constrainer .cta { vertical-align: middle; display: block; text-align: center; }
-@media (min-width: 960px) { #header.poster .constrainer .cta { display: table-cell; text-align: right; } }
-#header.poster .constrainer .btn, #header.poster .constrainer #specs ul li, #specs ul #header.poster .constrainer li { border: 4px solid #eae0db; background: transparent; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-size: 1em; display: inline-block; font-weight: normal; margin: 1em 2%; float: none; }
-@media (min-width: 960px) { #header.poster .constrainer .btn, #header.poster .constrainer #specs ul li, #specs ul #header.poster .constrainer li { display: block; float: right; margin: 0; } }
+#header.poster .constrainer .cta { text-align: center; text-shadow: 0.06em 0.06em 0px #961306; margin: 1em 2%; }
+#header.poster .constrainer .btn, #header.poster .constrainer #specs ul li, #specs ul #header.poster .constrainer li { border: 4px solid #eae0db; background: transparent; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-size: 1em; display: inline-block; font-weight: normal; float: none; }
 #header.poster .constrainer .btn:hover, #header.poster .constrainer #specs ul li:hover, #specs ul #header.poster .constrainer li:hover, #header.poster .constrainer .btn:focus, #header.poster .constrainer #specs ul li:focus, #specs ul #header.poster .constrainer li:focus { background: #9da0aa; }
 #header .scroll { color: #eae0db; font-weight: 900; font-size: 2em; line-height: .4em; position: absolute; left: 50%; bottom: 1em; text-align: center; font-family: arial; font-weight: bold; display: block; margin-left: -2em; width: 4em; padding: 0; }
-
-body > div { padding: 4em 0; }
 
 body > div > section { margin: 0 auto; padding: 0 4%; }
 
 #headlines { margin: 0 4%; border-bottom: 2px solid #b31707; }
 
-#headlines section { font-size: 2.625em; line-height: 1.14286em; text-align: center; }
+#headlines section { text-align: center; }
 #headlines section .hashtag { display: block; }
 #headlines section img { display: none; }
 #headlines section a { font-family: "intro caps"; font-size: .5em; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-weight: 700; color: #eae0db; background: #9da0aa; padding: .6em .9em .45em; }
@@ -404,13 +391,11 @@ body > div > section { margin: 0 auto; padding: 0 4%; }
 #headlines section a:hover, #headlines section a:focus { background: #41413e; }
 
 #features section ul { padding: 0; margin: 0; }
+#features section ul li { list-style-type: none; }
 #features section [data-icon] { display: block; float: left; background: #b31707; color: #eae0db; width: 4em; height: 4em; text-align: center; line-height: 4em; margin-right: 1em; -webkit-border-radius: 2em; -moz-border-radius: 2em; -ms-border-radius: 2em; -o-border-radius: 2em; border-radius: 2em; }
 
 #specs { background: #9da0aa; color: #eae0db; padding: 2em 0; overflow: hidden; *zoom: 1; }
-#specs section { display: -webkit-flex; display: flex; }
-#specs h1 { text-align: right; width: 40%; float: left; padding-top: .5em; }
-#specs .group { float: right; width: 50%; border-left: 8px solid #eae0db; padding: .5em 0 2% 4%; margin-left: 4%; }
-#specs h2 { color: #41413e; font-size: 1em; line-height: 1.5em; font-weight: normal; }
+#specs h2 { color: #41413e; font-weight: normal; }
 #specs ul { margin: 0; padding: 0; text-indent: 0; overflow: hidden; *zoom: 1; }
 #specs ul li { float: left; background: #eae0db; color: #41413e; margin: 0 2% 1em 0; }
 #specs ul li:last-child { margin-right: 0; }
@@ -430,3 +415,4 @@ body > div > section { margin: 0 auto; padding: 0 4%; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
+/*# sourceMappingURL=main.css.map */

@@ -13,6 +13,12 @@ $color-white: #eae0db;
 
 $background: $color-white;
 
+$default-text-shadow-color: #961306;
+$default-text-shadow-blur: 0px;
+$default-text-shadow-v-offset: .06em;
+$default-text-shadow-h-offset: .06em;
+
+
 /*  SELECTION COLORS
 ----------------------------------------------------------------------------------------*/
 
@@ -100,7 +106,6 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
     text-transform: uppercase;
 }
 
-@include establish-baseline;
 
 body {
     font-family: Georgia, serif;
@@ -114,7 +119,6 @@ h1,h2,h3,h4,h5,h6,
 
 h1,
 .fauxh1 {
-    @include adjust-font-size-to(42px);
 }
 h1:first-child,
 .fauxh1:first-child {
@@ -122,7 +126,6 @@ h1:first-child,
 
 h2,
 .fauxh2 {
-    @include adjust-font-size-to(36px);
 }
 
 h3,
@@ -138,12 +141,10 @@ h5,
 h6,
 .fauxh6 {}
 
-small {@include adjust-font-size-to(9px);}
 
 code,
 pre {
     font-family: Monaco, 'Courier New', monospace;
-    @include rhythm-borders(1px);
 }
 
 sup,
@@ -233,13 +234,42 @@ a.btn {
     }
 }
 
+.nameplate {
+                font-weight: 900;
+                font-size: 1.8em;
+                line-height: 1.2em;
+                margin: 0 0 .4em;
+                padding: 0 0 .2em;
+            }
+
 nav {
-    position: fixed;
-    top: 0px;
-    left: 0px;
+    background: #421b16;
+    text-align: right;
+    padding: .8em 2% .6em;
+    .nameplate {
+        text-align: left;
+        float: left;
+        font-size: 1em;
+    }
+    h2 {
+        display: none;
+    }
     ul {
         @include inline-block-list;
+        li {
+            margin-left: 2%;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
     }
+    a {
+        color: $color-white;
+    }
+}
+
+nav {
+
 }
 
 #header {
@@ -249,30 +279,27 @@ nav {
     position: relative;
 
     &.poster {
-        position:relative;
-        display: table;
-        width: 100%;
-        overflow: hidden;
+        // position:relative;
+        // display: table;
+        // width: 100%;
+        // overflow: hidden;
 
         .constrainer {
         
-            display: table-cell;
-            vertical-align: middle;
-            padding: 1em 2% .8em;
-            font-size: 1.8em;
+            // display: table-cell;
+            // vertical-align: middle;
+            margin: 0 2% 1em;
+            padding-top: 1em;
+            font-size: 1em;
             line-height: 1.65em;
             letter-spacing: .1em;
-            @include clearfix;            
+            // @include clearfix;            
 
             a {color: $color-white;}
 
             .nameplate {
-                font-weight: 900;
-                font-size: 1.8em;
-                line-height: 1.2em;
-                margin: 0 0 .4em;
-                padding: 0 0 .2em;
                 border-bottom: 8px solid $color-white;
+                @include single-text-shadow;
             }
 
             .greeting {
@@ -283,11 +310,11 @@ nav {
             }
             
             .group {
-                display: block;
-                @include breakpoint($tabScape) {
-                    display: table;
-                    width: 100%;
-                }
+                // display: block;
+                // @include breakpoint($tabScape) {
+                //     display: table;
+                //     width: 100%;
+                // }
                 
             }
 
@@ -296,10 +323,10 @@ nav {
                 vertical-align: top;
                 max-width: 20em;
                 
-                @include breakpoint($tabScape) {
-                    display: table-cell;
-                    width: 20em;
-                }
+                // @include breakpoint($tabScape) {
+                //     display: table-cell;
+                //     width: 20em;
+                // }
 
                 h1, h2, p {
                     font-size: 1em;
@@ -315,14 +342,16 @@ nav {
             }
             
             .cta {
-                vertical-align: middle;
-                display: block;
+                // vertical-align: middle;
+                // display: block;
                 text-align: center;
+                @include single-text-shadow;
+                margin: 1em 2%;
                 
-                @include breakpoint($tabScape) {
-                    display: table-cell;
-                    text-align: right;
-                }
+                // @include breakpoint($tabScape) {
+                //     display: table-cell;
+                //     text-align: right;
+                // }
                 
             }
             
@@ -333,14 +362,13 @@ nav {
                 font-size: 1em;
                 display: inline-block;
                 font-weight: normal;
-                margin: 1em 2%;
                 float: none;
 
-                @include breakpoint($tabScape) {
-                    display: block;
-                    float: right;
-                    margin: 0;
-                }
+                // @include breakpoint($tabScape) {
+                //     display: block;
+                //     float: right;
+                //     margin: 0;
+                // }
 
                 &:hover,
                 &:focus {
@@ -367,9 +395,9 @@ nav {
         padding: 0;
     }
 }
-body > div {
-    padding: 4em 0;
-}
+// body > div {
+    // padding: 4em 0;
+// }
 
 body > div > section {
     margin: 0 auto;
@@ -383,7 +411,6 @@ body > div > section {
 }
 
 #headlines section {
-    @include adjust-font-size-to(42px);
     text-align: center;
     // max-width: 650px;
 
@@ -417,6 +444,7 @@ body > div > section {
             padding: 0;
             margin: 0;
             li {
+                list-style-type: none;
             }
         }
        	[data-icon] {
@@ -431,10 +459,6 @@ body > div > section {
 					margin-right: 1em;
       		@include border-radius(2em);
       	}
-        h2 {
-        }
-        p {
-        }
     }
 }
 
@@ -445,33 +469,32 @@ body > div > section {
     @include clearfix;
     
     section{
-        display: -webkit-flex;
-        display: flex;
+        //display: -webkit-flex;
+        //display: flex;
        // max-width: 900px;
     }
 
     h1 {
-        text-align: right;
-        width: 40%;
-        float: left;
-        padding-top: .5em;
+        // text-align: right;
+        // width: 40%;
+        // float: left;
+        // padding-top: .5em;
         // -webkit-flex: 1;
         // flex: 1;
     }
 
     .group {
-        float: right;
-        width: 50%;
-        border-left: 8px solid $color-white;
-        padding: .5em 0 2% 4%;
-        margin-left: 4%;
+        // float: right;
+        // width: 50%;
+        // border-left: 8px solid $color-white;
+        // padding: .5em 0 2% 4%;
+        // margin-left: 4%;
         // -webkit-flex: 1;
         // flex: 1;
     }
 
     h2 {
         color: $color-black;
-        @include adjust-font-size-to(16px);
         font-weight: normal;
     }
 
@@ -495,3 +518,5 @@ body > div > section {
 }
 
 @import 'print';
+
+/*# sourceMappingURL=main.css.map */

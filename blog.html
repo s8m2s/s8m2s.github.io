@@ -5,7 +5,7 @@ description: Blog posts covering web design, web development awsell as photograp
 permalink: /blog/
 ---
 <ul>
-  {% for post in site.posts %}
+	{% for post in site.posts limit: 20 %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       <p>{{ post.excerpt }}</p>

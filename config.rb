@@ -4,10 +4,10 @@ require 'breakpoint'
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "stylesheets"
-sass_dir = "stylesheets/sass"
+sass_dir = "stylesheets/_sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
-# sass_options = { :debug_info => true }
+# jekyll sass_options = { :debug_info => true }
 # sass_options = { :sourcemap => true }
 # enable_sourcemaps = true
 
