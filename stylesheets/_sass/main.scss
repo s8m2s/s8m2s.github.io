@@ -15,8 +15,8 @@ $background: $color-white;
 
 $default-text-shadow-color: #961306;
 $default-text-shadow-blur: 0px;
-$default-text-shadow-v-offset: .06em;
-$default-text-shadow-h-offset: .06em;
+$default-text-shadow-v-offset: .08em;
+$default-text-shadow-h-offset: .08em;
 
 
 /*  SELECTION COLORS
@@ -224,7 +224,7 @@ body {
     line-height: 1em;
     padding: .6em .9em .43em;
     text-align: center;
-    display: block;
+    display: inline-block;
 }
 
 a.btn {
@@ -235,12 +235,12 @@ a.btn {
 }
 
 .nameplate {
-                font-weight: 900;
-                font-size: 1.8em;
-                line-height: 1.2em;
-                margin: 0 0 .4em;
-                padding: 0 0 .2em;
-            }
+    font-weight: 900;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    padding: 0 0 .3em;
+    margin: 0 0 .5em;
+}
 
 nav {
     background: #421b16;
@@ -257,7 +257,7 @@ nav {
     ul {
         @include inline-block-list;
         li {
-            margin-left: 2%;
+            margin-left: 4%;
             &:first-child {
                 margin-left: 0;
             }
@@ -266,10 +266,6 @@ nav {
     a {
         color: $color-white;
     }
-}
-
-nav {
-
 }
 
 #header {
@@ -465,7 +461,7 @@ body > div > section {
 #specs {
     background: $color-blue;
     color: $color-white;
-    padding: 2em 0;
+    padding: 1em 0;
     @include clearfix;
     
     section{
@@ -514,6 +510,18 @@ body > div > section {
                 margin-right:0;
             }
         }
+    }
+}
+
+#footer {
+    background: $color-black;
+    color: $color-white;
+    .constrainer {
+        padding: 1em 4%;
+    }
+    .btn {
+        background: $color-white;
+        color: $color-black;
     }
 }
 
