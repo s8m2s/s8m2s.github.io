@@ -404,32 +404,31 @@ body > div > section {
 #headlines {
     margin: 0 4%;
     border-bottom: 2px solid $color-red;
-}
-
-#headlines section {
+    section {
     text-align: center;
     // max-width: 650px;
 
-    .hashtag {display: block;}
+        .hashtag {display: block;}
 
-    img {display:none;}
+        img {display:none;}
 
-    a {
-        font-family: "intro caps";
-        font-size: .5em;
-        @include border-radius(.5em);
-        font-weight: 700;
-        color: $color-white;
-        background: $color-blue;
-        padding: .6em .9em .45em;
-        
-        .symbol {
-            vertical-align: .075em;
-        }
+        a {
+            font-family: "intro caps";
+            font-size: .5em;
+            @include border-radius(.5em);
+            font-weight: 700;
+            color: $color-white;
+            background: $color-blue;
+            padding: .6em .9em .45em;
+            
+            .symbol {
+                vertical-align: .075em;
+            }
 
-        &:hover,
-        &:focus {
-            background: $color-black;
+            &:hover,
+            &:focus {
+                background: $color-black;
+            }
         }
     }
 }
@@ -516,6 +515,9 @@ body > div > section {
 #footer {
     background: $color-black;
     color: $color-white;
+    a {
+        color: $color-white;
+    }
     .constrainer {
         padding: 1em 4%;
     }
