@@ -224,12 +224,6 @@ body {
     display: inline-block;
     text-decoration: none;
 }
-// a.btn {
-//     &:hover,
-//     &:focus {
-//         background: $color-black;
-//     }
-// }
 
 .nameplate {
     font-weight: 900;
@@ -238,22 +232,6 @@ body {
     padding: 0 0 .3em;
     margin: 0;
     & a {text-decoration: none;}
-}
-
-nav {
-    margin-top: 10%;
-    h2 {
-        display: none;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        
-    }
-    li {
-        
-    }
 }
 
 body > div > section {
@@ -266,37 +244,31 @@ body > div > section {
     background: $color-red;
     color: $color-white;
     position: relative;
-    // border-bottom: 2em solid $color-white;
-    // border-collapse: collapse;
     line-height: 1.65em;
     letter-spacing: .1em;
     padding:0;
     margin:0;
 
     &.poster {
-        // position:relative;
         display: table;
         width: 100%;
-        max-width: 1024px;
-        background-image: url('/images/macbookpro.png');
-        background-position: top -130px right -130px;
-        background-repeat:no-repeat;
-        background-size: 100%;
-        margin: auto;
-        // overflow: hidden;
 
         .constrainer {
         
             display: table-cell;
             vertical-align: middle;
-            @include clearfix;            
             padding:2em 2%;
-            a {color: $color-white;}
+            a {
+                color: $color-white;
+                &:hover,
+                &:focus {
+                    color: $color-blue;
+                }
+            }
 
             .mast {
                 border-bottom: .35rem solid $color-white;
                 margin-bottom: .8em;
-                @include clearfix;
             }
 
             .greeting {
@@ -306,14 +278,14 @@ body > div > section {
                 line-height: 1.6em;
             }
             
-            .group {
-                // display: block;
-                // @include breakpoint($tabScape) {
-                //     display: table;
-                //     width: 100%;
-                // }
+            // .group {
+            //     display: block;
+            //     @include breakpoint($tabScape) {
+            //         display: table;
+            //         width: 100%;
+            //     }
                 
-            }
+            // }
 
             .intro {
                 display: block;

@@ -358,17 +358,14 @@ body { background: #eae0db; color: #41413e; }
 .nameplate { font-weight: 900; font-size: 1.8em; line-height: 1.2em; padding: 0 0 .3em; margin: 0; }
 .nameplate a { text-decoration: none; }
 
-nav { margin-top: 10%; }
-nav h2 { display: none; }
-nav ul { margin: 0; padding: 0; list-style: none; }
-
 body > div > section { margin: 0 auto; padding: 0 4%; }
 
 #header { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; background: #b31707; color: #eae0db; position: relative; line-height: 1.65em; letter-spacing: .1em; padding: 0; margin: 0; }
-#header.poster { display: table; width: 100%; max-width: 1024px; background-image: url("/images/macbookpro.png"); background-position: top -130px right -130px; background-repeat: no-repeat; background-size: 100%; margin: auto; }
-#header.poster .constrainer { display: table-cell; vertical-align: middle; overflow: hidden; *zoom: 1; padding: 2em 2%; }
+#header.poster { display: table; width: 100%; }
+#header.poster .constrainer { display: table-cell; vertical-align: middle; padding: 2em 2%; }
 #header.poster .constrainer a { color: #eae0db; }
-#header.poster .constrainer .mast { border-bottom: 0.35rem solid #eae0db; margin-bottom: .8em; overflow: hidden; *zoom: 1; }
+#header.poster .constrainer a:hover, #header.poster .constrainer a:focus { color: #9da0aa; }
+#header.poster .constrainer .mast { border-bottom: 0.35rem solid #eae0db; margin-bottom: .8em; }
 #header.poster .constrainer .greeting { display: block; font-size: .6em; font-weight: 700; line-height: 1.6em; }
 #header.poster .constrainer .intro { display: block; vertical-align: top; }
 #header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2, #header.poster .constrainer .intro p { font-size: 1em; line-height: 1em; font-weight: normal; display: inline; }

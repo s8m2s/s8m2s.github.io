@@ -1,16 +1,26 @@
-// Set the height of an eliment to fill the viewport
-var resizePoster = function () {
+if (Modernizr.flexbox) {
 
-    var posters = {
-        content: $('.poster')
-    };
+	// Set the height of an eliment to fill the height of the viewport
+	var resizePoster = function () {
 
-    posters.content.css('height', $(window).height());
+	    var posters = {
+	        content: $('.poster')
+	    };
+
+	    posters.content.css('height', $(window).height());
+
+	};
+
+	// Set height on load
+	resizePoster();
+
+	// changes the height when the window is resized or when orientation changes
+	$(window).bind('resize orientationchange', resizePoster);
 
 };
-    
-resizePoster();
-$(window).bind('resize orientationchange', resizePoster);
+
+
+
 
 // FlexSlider Slideshow
 //   $('.slider').flexslider({
