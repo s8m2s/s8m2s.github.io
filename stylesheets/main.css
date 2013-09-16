@@ -372,7 +372,7 @@ body > div > section { margin: 0 auto; padding: 0 4%; }
 #header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2 { font-weight: normal; }
 #header.poster .constrainer .cta { text-align: center; }
 #header.poster .constrainer .btn, #header.poster .constrainer #specs ul li, #specs ul #header.poster .constrainer li { border: 0.2em solid #eae0db; background: transparent; margin: 10% 0 0; }
-#header.poster .constrainer .btn:hover, #header.poster .constrainer #specs ul li:hover, #specs ul #header.poster .constrainer li:hover, #header.poster .constrainer .btn:focus, #header.poster .constrainer #specs ul li:focus, #specs ul #header.poster .constrainer li:focus { background: #9da0aa; }
+#header.poster .constrainer .btn:hover, #header.poster .constrainer #specs ul li:hover, #specs ul #header.poster .constrainer li:hover, #header.poster .constrainer .btn:focus, #header.poster .constrainer #specs ul li:focus, #specs ul #header.poster .constrainer li:focus { background: #9da0aa; color: #eae0db; }
 #header .scroll { color: #eae0db; position: absolute; left: 50%; bottom: 1em; text-align: center; display: block; margin-left: -4em; width: 8em; text-decoration: none; }
 
 #headlines { margin: 0 4%; border-bottom: 2px solid #b31707; }
