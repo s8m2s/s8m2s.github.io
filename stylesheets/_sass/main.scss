@@ -110,35 +110,22 @@ body {
     font-family: Georgia, serif;
 }
 
-h1,h2,h3,h4,h5,h6,
-[class*="fauxh"]{
+h1,h2,h3,h4,h5,h6 {
     @include intro-font;
     font-weight: 700;
 }
 
-h1,
-.fauxh1 {
-}
-h1:first-child,
-.fauxh1:first-child {
-}
+h1,{}
 
-h2,
-.fauxh2 {
-}
+h2 {}
 
-h3,
-.fauxh3 {
-}
+h3 {}
 
-h4,
-.fauxh4 {}
+h4 {}
 
-h5,
-.fauxh5 {}
+h5 {}
 
-h6,
-.fauxh6 {}
+h6 {}
 
 
 code,
@@ -256,7 +243,7 @@ body > div > section {
         
             display: table-cell;
             vertical-align: middle;
-            padding:2em 2%;
+            padding:2em 4%;
             a {
                 color: $color-white;
                 &:hover,

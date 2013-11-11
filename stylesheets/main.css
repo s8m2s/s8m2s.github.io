@@ -323,7 +323,7 @@ body { -webkit-tap-highlight-color: rgba(131, 131, 131, 0.5); }
 
 body { font-family: Georgia, serif; }
 
-h1, h2, h3, h4, h5, h6, [class*="fauxh"] { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; font-weight: 700; }
+h1, h2, h3, h4, h5, h6 { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; font-weight: 700; }
 
 code, pre { font-family: Monaco, 'Courier New', monospace; }
 
@@ -362,7 +362,7 @@ body > div > section { margin: 0 auto; padding: 0 4%; }
 
 #header { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; background: #b31707; color: #eae0db; position: relative; line-height: 1.65em; letter-spacing: .1em; padding: 0; margin: 0; }
 #header.poster { display: table; width: 100%; }
-#header.poster .constrainer { display: table-cell; vertical-align: middle; padding: 2em 2%; }
+#header.poster .constrainer { display: table-cell; vertical-align: middle; padding: 2em 4%; }
 #header.poster .constrainer a { color: #eae0db; }
 #header.poster .constrainer a:hover, #header.poster .constrainer a:focus { color: #9da0aa; }
 #header.poster .constrainer .mast { border-bottom: 0.35rem solid #eae0db; margin-bottom: .8em; }
