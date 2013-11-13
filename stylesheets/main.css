@@ -321,6 +321,10 @@ body { -webkit-tap-highlight-color: rgba(131, 131, 131, 0.5); }
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before { font-family: 'icons'; content: attr(data-icon); speak: none; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; }
 
+* html { font-size: 100%; }
+
+html { font-size: 16px; line-height: 1.5625em; }
+
 body { font-family: Georgia, serif; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; font-weight: 700; }
@@ -353,27 +357,26 @@ a:active { color: #990000; }
 ----------------------------------------------------------------------------------------*/
 body { background: #eae0db; color: #41413e; }
 
-.btn, #specs ul li { font-family: "intro caps"; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-weight: 700; line-height: 1em; padding: .6em .9em .43em; text-align: center; display: inline-block; text-decoration: none; }
+section { padding: 1em; }
 
-.nameplate { font-weight: 900; font-size: 1.8em; line-height: 1.2em; padding: 0 0 .3em; margin: 0; }
-.nameplate a { text-decoration: none; }
+.btn, #specs ul li { font-family: "intro caps"; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-weight: 700; line-height: 2.5em; padding: .08em 1.5em 0 1.5em; text-align: center; display: inline-block; text-decoration: none; }
 
-body > div > section { margin: 0 auto; padding: 0 4%; }
+.greeting { font-weight: 700; font-size: 1.125em; line-height: 1.38889em; }
+.greeting a { text-decoration: none; }
+.greeting:after { content: "."; border-bottom: 4px solid #eae0db; text-indent: -9999px; display: block; line-height: 0.5em; }
 
-#header { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; background: #b31707; color: #eae0db; position: relative; line-height: 1.65em; letter-spacing: .1em; padding: 0; margin: 0; }
-#header.poster { display: table; width: 100%; }
-#header.poster .constrainer { display: table-cell; vertical-align: middle; padding: 2em 4%; }
-#header.poster .constrainer a { color: #eae0db; }
-#header.poster .constrainer a:hover, #header.poster .constrainer a:focus { color: #9da0aa; }
-#header.poster .constrainer .mast { border-bottom: 0.35rem solid #eae0db; margin-bottom: .8em; }
-#header.poster .constrainer .greeting { display: block; font-size: .6em; font-weight: 700; line-height: 1.6em; }
-#header.poster .constrainer .intro { display: block; vertical-align: top; }
-#header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2, #header.poster .constrainer .intro p { font-size: 1em; line-height: 1em; font-weight: normal; display: inline; }
-#header.poster .constrainer .intro h1, #header.poster .constrainer .intro h2 { font-weight: normal; }
-#header.poster .constrainer .cta { text-align: center; }
-#header.poster .constrainer .btn, #header.poster .constrainer #specs ul li, #specs ul #header.poster .constrainer li { border: 0.2em solid #eae0db; background: transparent; margin: 10% 0 0; }
-#header.poster .constrainer .btn:hover, #header.poster .constrainer #specs ul li:hover, #specs ul #header.poster .constrainer li:hover, #header.poster .constrainer .btn:focus, #header.poster .constrainer #specs ul li:focus, #specs ul #header.poster .constrainer li:focus { background: #9da0aa; color: #eae0db; }
-#header .scroll { color: #eae0db; position: absolute; left: 50%; bottom: 1em; text-align: center; display: block; margin-left: -4em; width: 8em; text-decoration: none; }
+.nameplate { font-size: 1.375em; line-height: 2.27273em; display: block; }
+
+.mast { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; background: #b31707; color: #eae0db; }
+.mast.poster { display: table; width: 100%; }
+.mast.poster section { display: table-cell; vertical-align: middle; padding: 1em; }
+.mast.poster section a { color: #eae0db; }
+.mast.poster section a:hover, .mast.poster section a:focus { color: #9da0aa; }
+.mast.poster section h1 { font-size: 1em; font-weight: normal; margin: 1em 0; }
+.mast.poster section .cta { text-align: center; }
+.mast.poster section .btn, .mast.poster section #specs ul li, #specs ul .mast.poster section li { border: 0.2em solid #eae0db; background: transparent; }
+.mast.poster section .btn:hover, .mast.poster section #specs ul li:hover, #specs ul .mast.poster section li:hover, .mast.poster section .btn:focus, .mast.poster section #specs ul li:focus, #specs ul .mast.poster section li:focus { background: #9da0aa; color: #eae0db; }
+.mast .scroll { color: #eae0db; position: absolute; left: 50%; bottom: 1em; text-align: center; display: block; margin-left: -4em; width: 8em; text-decoration: none; }
 
 #headlines { margin: 0 4%; border-bottom: 2px solid #b31707; }
 #headlines section { text-align: center; }
@@ -385,7 +388,7 @@ body > div > section { margin: 0 auto; padding: 0 4%; }
 
 #features section ul { padding: 0; margin: 0; }
 #features section ul li { list-style-type: none; }
-#features section [data-icon] { display: block; float: left; background: #b31707; color: #eae0db; width: 4em; height: 4em; text-align: center; line-height: 4em; margin-right: 1em; -webkit-border-radius: 2em; -moz-border-radius: 2em; -ms-border-radius: 2em; -o-border-radius: 2em; border-radius: 2em; }
+#features section [data-icon] { display: block; background: #b31707; color: #eae0db; width: 4em; height: 4em; text-align: center; line-height: 4em; margin-right: 1em; -webkit-border-radius: 2em; -moz-border-radius: 2em; -ms-border-radius: 2em; -o-border-radius: 2em; border-radius: 2em; }
 
 #specs { background: #9da0aa; color: #eae0db; padding: 1em 0; overflow: hidden; *zoom: 1; }
 #specs h2 { color: #41413e; font-weight: normal; }

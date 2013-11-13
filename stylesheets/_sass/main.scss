@@ -106,6 +106,24 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
     text-transform: uppercase;
 }
 
+// Vertical Rhythm
+$base-font-size: 16px;
+$base-line-height: 25px;
+
+@include establish-baseline;
+
+@mixin button($radius) {
+    font-family: "intro caps";
+    @include border-radius($radius);
+    font-weight: 700;
+    line-height: 2.5em;
+    padding: .08em 1.5em 0 1.5em;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
 body {
     font-family: Georgia, serif;
 }
@@ -200,50 +218,44 @@ body {
     color: $color-black;
 }
 
+section {
+    padding: 1em;
+}
+
 .btn {
-    font-family: "intro caps";
-    @include border-radius(.5em);
+    @include button(.5em);
+}
+
+.greeting {
     font-weight: 700;
-    line-height: 1em;
-    padding: .6em .9em .43em;
-    text-align: center;
-    display: inline-block;
-    text-decoration: none;
-}
-
-.nameplate {
-    font-weight: 900;
-    font-size: 1.8em;
-    line-height: 1.2em;
-    padding: 0 0 .3em;
-    margin: 0;
+    @include adjust-font-size-to(18px);
     & a {text-decoration: none;}
+    &:after {
+        content: ".";
+        border-bottom: 4px solid $color-white;
+        text-indent: -9999px;
+        display: block;
+        line-height: 0.5em;
+    }
+}
+.nameplate {
+    @include adjust-font-size-to(22px);
+    display: block;
 }
 
-body > div > section {
-    margin: 0 auto;
-    padding: 0 4%;
-}
-
-#header {
+.mast {
     @include intro-font;
     background: $color-red;
     color: $color-white;
-    position: relative;
-    line-height: 1.65em;
-    letter-spacing: .1em;
-    padding:0;
-    margin:0;
 
     &.poster {
         display: table;
         width: 100%;
 
-        .constrainer {
-        
+        section {
             display: table-cell;
             vertical-align: middle;
-            padding:2em 4%;
+            padding: 1em;
             a {
                 color: $color-white;
                 &:hover,
@@ -251,73 +263,17 @@ body > div > section {
                     color: $color-blue;
                 }
             }
-
-            .mast {
-                border-bottom: .35rem solid $color-white;
-                margin-bottom: .8em;
-            }
-
-            .greeting {
-                display: block;
-                font-size: .6em;
-                font-weight: 700;
-                line-height: 1.6em;
-            }
-            
-            // .group {
-            //     display: block;
-            //     @include breakpoint($tabScape) {
-            //         display: table;
-            //         width: 100%;
-            //     }
-                
-            // }
-
-            .intro {
-                display: block;
-                vertical-align: top;
-                // max-width: 20em;
-                
-                // @include breakpoint($tabScape) {
-                //     display: table-cell;
-                //     width: 20em;
-                // }
-
-                h1, h2, p {
-                    font-size: 1em;
-                    line-height: 1em;
-                    font-weight: normal;
-                    display: inline;
-                }
-
-                h1, h2 {
-                    font-weight:normal;
-                }
-    
+            h1 {
+                font-size: 1em;
+                font-weight: normal;
+                margin: 1em 0;
             }
             .cta {
-                // vertical-align: middle;
                 text-align: center;
-                
-                // @include breakpoint($tabScape) {
-                //     display: table-cell;
-                //     text-align: right;
-                // }
-                
             }
-            
-            
             .btn {
                 border: .2em solid $color-white;
                 background: transparent;
-                margin: 10% 0 0;
-
-                // @include breakpoint($tabScape) {
-                //     display: block;
-                //     float: right;
-                //     margin: 0;
-                // }
-
                 &:hover,
                 &:focus {
                     background: $color-blue;
@@ -383,7 +339,6 @@ body > div > section {
         }
        	[data-icon] {
       		display: block;
-      		float: left;
       		background: $color-red;
       		color: $color-white;
       		width: 4em;
