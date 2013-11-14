@@ -133,7 +133,9 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
 
-h1,{}
+h1,{
+    @include adjust-font-size-to(32px);
+}
 
 h2 {}
 
@@ -230,16 +232,22 @@ section {
     font-weight: 700;
     @include adjust-font-size-to(18px);
     & a {text-decoration: none;}
-    &:after {
-        content: ".";
-        border-bottom: 4px solid $color-white;
-        text-indent: -9999px;
-        display: block;
-        line-height: 0.5em;
-    }
+    @include rhythm-borders(4px);
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    padding: 0;
+    // &:after {
+    //     content: ".";
+    //     border-bottom: 4px solid $color-white;
+    //     text-indent: -9999px;
+    //     display: block;
+    //     line-height: 0.5em;
+    // }
 }
 .nameplate {
-    @include adjust-font-size-to(22px);
+    @include adjust-font-size-to(30px);
+    font-weight: 900;
     display: block;
 }
 
@@ -264,7 +272,7 @@ section {
                 }
             }
             h1 {
-                font-size: 1em;
+                @include adjust-font-size-to(16px);
                 font-weight: normal;
                 margin: 1em 0;
             }
@@ -330,6 +338,7 @@ section {
 
 #features {
     section {
+        text-align: center;
         ul {
             padding: 0;
             margin: 0;
@@ -345,7 +354,7 @@ section {
       		height: 4em;
       		text-align: center;
 					line-height: 4em;
-					margin-right: 1em;
+					margin: auto;
       		@include border-radius(2em);
       	}
     }

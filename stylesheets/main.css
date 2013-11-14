@@ -329,6 +329,8 @@ body { font-family: Georgia, serif; }
 
 h1, h2, h3, h4, h5, h6 { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; font-weight: 700; }
 
+h1 { font-size: 2em; line-height: 1.5625em; }
+
 code, pre { font-family: Monaco, 'Courier New', monospace; }
 
 sup, sub { line-height: 0em; }
@@ -361,18 +363,17 @@ section { padding: 1em; }
 
 .btn, #specs ul li { font-family: "intro caps"; -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; font-weight: 700; line-height: 2.5em; padding: .08em 1.5em 0 1.5em; text-align: center; display: inline-block; text-decoration: none; }
 
-.greeting { font-weight: 700; font-size: 1.125em; line-height: 1.38889em; }
+.greeting { font-weight: 700; font-size: 1.125em; line-height: 1.38889em; border-style: solid; border-width: 0.25em; padding: 1.3125em; border-top: none; border-right: none; border-left: none; padding: 0; }
 .greeting a { text-decoration: none; }
-.greeting:after { content: "."; border-bottom: 4px solid #eae0db; text-indent: -9999px; display: block; line-height: 0.5em; }
 
-.nameplate { font-size: 1.375em; line-height: 2.27273em; display: block; }
+.nameplate { font-size: 1.875em; line-height: 1.66667em; font-weight: 900; display: block; }
 
 .mast { font-family: 'intro caps', arial, sans-serif; text-transform: uppercase; background: #b31707; color: #eae0db; }
 .mast.poster { display: table; width: 100%; }
 .mast.poster section { display: table-cell; vertical-align: middle; padding: 1em; }
 .mast.poster section a { color: #eae0db; }
 .mast.poster section a:hover, .mast.poster section a:focus { color: #9da0aa; }
-.mast.poster section h1 { font-size: 1em; font-weight: normal; margin: 1em 0; }
+.mast.poster section h1 { font-size: 1em; line-height: 1.5625em; font-weight: normal; margin: 1em 0; }
 .mast.poster section .cta { text-align: center; }
 .mast.poster section .btn, .mast.poster section #specs ul li, #specs ul .mast.poster section li { border: 0.2em solid #eae0db; background: transparent; }
 .mast.poster section .btn:hover, .mast.poster section #specs ul li:hover, #specs ul .mast.poster section li:hover, .mast.poster section .btn:focus, .mast.poster section #specs ul li:focus, #specs ul .mast.poster section li:focus { background: #9da0aa; color: #eae0db; }
@@ -386,9 +387,10 @@ section { padding: 1em; }
 #headlines section a .symbol { vertical-align: .075em; }
 #headlines section a:hover, #headlines section a:focus { background: #41413e; }
 
+#features section { text-align: center; }
 #features section ul { padding: 0; margin: 0; }
 #features section ul li { list-style-type: none; }
-#features section [data-icon] { display: block; background: #b31707; color: #eae0db; width: 4em; height: 4em; text-align: center; line-height: 4em; margin-right: 1em; -webkit-border-radius: 2em; -moz-border-radius: 2em; -ms-border-radius: 2em; -o-border-radius: 2em; border-radius: 2em; }
+#features section [data-icon] { display: block; background: #b31707; color: #eae0db; width: 4em; height: 4em; text-align: center; line-height: 4em; margin: auto; -webkit-border-radius: 2em; -moz-border-radius: 2em; -ms-border-radius: 2em; -o-border-radius: 2em; border-radius: 2em; }
 
 #specs { background: #9da0aa; color: #eae0db; padding: 1em 0; overflow: hidden; *zoom: 1; }
 #specs h2 { color: #41413e; font-weight: normal; }
