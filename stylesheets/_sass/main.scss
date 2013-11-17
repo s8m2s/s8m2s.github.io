@@ -346,7 +346,7 @@ section {
                 list-style-type: none;
             }
         }
-       	[data-icon] {
+       	[data-icon]:before {
       		display: block;
       		background: $color-red;
       		color: $color-white;
