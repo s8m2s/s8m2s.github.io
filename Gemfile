@@ -3,5 +3,5 @@ source "https://rubygems.org"
 # gems
 
 gem "compass"
-gem "breakpoint"
+gem "singularitygs"
 gem "jekyll"
