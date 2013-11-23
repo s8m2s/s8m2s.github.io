@@ -207,28 +207,29 @@ a {
 /*  LAYOUT
 ----------------------------------------------------------------------------------------*/
 
-$page-width: 700px;
-
-$tabScape: 960px;
+$grids: 12;
+$gutters: 1em;
 
 
 /*  STYLING
 ----------------------------------------------------------------------------------------*/
+
+* {
+  @include box-sizing('border-box');
+}
+
 
 body {
     background: $background;
     color: $color-black;
 }
 
-section {
-    padding: 1em;
-}
-
+section {}
 .btn {
     @include button(.5em);
 }
 
-.greeting {
+.greeting p {
     font-weight: 700;
     @include adjust-font-size-to(18px);
     & a {text-decoration: none;}
@@ -237,18 +238,13 @@ section {
     border-right:none;
     border-left:none;
     padding: 0;
-    // &:after {
-    //     content: ".";
-    //     border-bottom: 4px solid $color-white;
-    //     text-indent: -9999px;
-    //     display: block;
-    //     line-height: 0.5em;
-    // }
+}
+section.cta {
 }
 .nameplate {
     @include adjust-font-size-to(30px);
     font-weight: 900;
-    display: block;
+    display: block; 
 }
 
 .mast {
@@ -259,11 +255,15 @@ section {
     &.poster {
         display: table;
         width: 100%;
-
         section {
+        }
+        .container {
             display: table-cell;
             vertical-align: middle;
-            padding: 1em;
+            padding:1em;
+            .header {
+    @include background-grid;
+            }
             a {
                 color: $color-white;
                 &:hover,
@@ -274,8 +274,9 @@ section {
             h1 {
                 @include adjust-font-size-to(16px);
                 font-weight: normal;
-                margin: 1em 0;
+                margin-bottom: 0;
             }
+            p {margin: 0;}
             .cta {
                 text-align: center;
             }
@@ -339,6 +340,8 @@ section {
 #features {
     section {
         text-align: center;
+        @include clearfix;
+        padding: 1em;
         ul {
             padding: 0;
             margin: 0;
@@ -346,17 +349,24 @@ section {
                 list-style-type: none;
             }
         }
-       	[data-icon]:before {
-      		display: block;
-      		background: $color-red;
-      		color: $color-white;
-      		width: 4em;
-      		height: 4em;
-      		text-align: center;
-					line-height: 4em;
+	[data-icon]:before {
+		display: block;
+		background: $color-red;
+		color: $color-white;
+		width: 2em;
+		height: 2em;
+            font-size: 3em;
+		text-align: center;
+					line-height: 2em;
 					margin: auto;
-      		@include border-radius(2em);
-      	}
+		@include border-radius(1em);
+	}
+    }
+}
+.service {
+    @include grid-span(4, $output-style:'float');
+    &:last-child{
+        padding-right:0;
     }
 }
 
@@ -431,5 +441,3 @@ section {
 }
 
 @import 'print';
-
-/*# sourceMappingURL=main.css.map */
