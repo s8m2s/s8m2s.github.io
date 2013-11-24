@@ -89,18 +89,6 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
     font-style: normal;
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-    font-family: 'icons';
-    content: attr(data-icon);
-    speak: none;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-}
-
 @mixin intro-font {
     font-family: 'intro caps', arial, sans-serif;
     text-transform: uppercase;
@@ -112,6 +100,17 @@ $base-line-height: 25px;
 
 @include establish-baseline;
 
+[data-icon]:before {
+    font-family: 'icons';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
 @mixin button($radius) {
     font-family: "intro caps";
     @include border-radius($radius);
@@ -122,7 +121,6 @@ $base-line-height: 25px;
     display: inline-block;
     text-decoration: none;
 }
-
 
 body {
     font-family: Georgia, serif;
@@ -183,8 +181,6 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
 }
 
 
@@ -207,27 +203,91 @@ a {
 /*  LAYOUT
 ----------------------------------------------------------------------------------------*/
 
-$grids: 12;
-$gutters: 1em;
+$grids: 3;
+$grids: add-grid(6 at 830px);
+$gutters: 1/3;
+$include-clearfix: true;
 
+* {@include box-sizing('border-box');}
 
-/*  STYLING
-----------------------------------------------------------------------------------------*/
-
-* {
-  @include box-sizing('border-box');
+body {
+    
 }
 
+.poster {
+    display: table;
+    width: 100%;
+}
+.container {
+    display: table-cell;
+    vertical-align: middle;
+    padding:1em;
+}
+.header {
+    max-width: 1120px;
+    margin:auto;
+}
+
+.intro {
+    @include breakpoint(830px) {
+        @include grid-span(4,1);
+    }
+}
+.cta {
+    text-align: center;
+    @include breakpoint(830px) {
+        @include grid-span(2,5);
+        text-align: right;
+    }
+}
+/*  STYLING
+----------------------------------------------------------------------------------------*/
 
 body {
     background: $background;
     color: $color-black;
 }
 
-section {}
-.btn {
-    @include button(.5em);
+.mast {
+    @include intro-font;
+    background: $color-red;
+    color: $color-white;
+    a {
+        color: $color-white;
+        &:hover,
+        &:focus {
+            color: $color-blue;
+        }
+    }
+    .nameplate {
+        @include adjust-font-size-to(28px);
+        @include breakpoint(420px) {
+        @include adjust-font-size-to(34px);
+        }
+        font-weight: 900;
+        display: block; 
+    }
+    h1 {
+        @include adjust-font-size-to(16px);
+        font-weight: normal;
+        margin: 0;
+    }
+    .btn {
+        @include button(.5em);
+        border: .2em solid $color-white;
+        @include adjust-font-size-to(18px);
+        padding: .65em 1.5em .6em 1.5em;
+        margin-top: 2em;
+        @include breakpoint(830px) {margin-top:0;}
+        background: transparent;
+        &:hover,
+        &:focus {
+            background: $color-blue;
+            color: $color-white;
+        }
+    }
 }
+
 
 .greeting p {
     font-weight: 700;
@@ -239,205 +299,4 @@ section {}
     border-left:none;
     padding: 0;
 }
-section.cta {
-}
-.nameplate {
-    @include adjust-font-size-to(30px);
-    font-weight: 900;
-    display: block; 
-}
-
-.mast {
-    @include intro-font;
-    background: $color-red;
-    color: $color-white;
-
-    &.poster {
-        display: table;
-        width: 100%;
-        section {
-        }
-        .container {
-            display: table-cell;
-            vertical-align: middle;
-            padding:1em;
-            .header {
-    @include background-grid;
-            }
-            a {
-                color: $color-white;
-                &:hover,
-                &:focus {
-                    color: $color-blue;
-                }
-            }
-            h1 {
-                @include adjust-font-size-to(16px);
-                font-weight: normal;
-                margin-bottom: 0;
-            }
-            p {margin: 0;}
-            .cta {
-                text-align: center;
-            }
-            .btn {
-                border: .2em solid $color-white;
-                background: transparent;
-                &:hover,
-                &:focus {
-                    background: $color-blue;
-                    color: $color-white;
-                }
-            }
-        }
-    }
-
-    .scroll {
-        color: $color-white;
-        position: absolute;
-        left: 50%;
-        bottom: 1em;
-        text-align: center;
-        display: block;
-        margin-left: -4em;
-        width: 8em;
-        text-decoration: none;
-    }
-}
-
-#headlines {
-    margin: 0 4%;
-    border-bottom: 2px solid $color-red;
-    section {
-    text-align: center;
-    // max-width: 650px;
-
-        .hashtag {display: block;}
-
-        img {display:none;}
-
-        a {
-            font-family: "intro caps";
-            font-size: .5em;
-            @include border-radius(.5em);
-            font-weight: 700;
-            color: $color-white;
-            background: $color-blue;
-            padding: .6em .9em .45em;
-            
-            .symbol {
-                vertical-align: .075em;
-            }
-
-            &:hover,
-            &:focus {
-                background: $color-black;
-            }
-        }
-    }
-}
-
-#features {
-    section {
-        text-align: center;
-        @include clearfix;
-        padding: 1em;
-        ul {
-            padding: 0;
-            margin: 0;
-            li {
-                list-style-type: none;
-            }
-        }
-	[data-icon]:before {
-		display: block;
-		background: $color-red;
-		color: $color-white;
-		width: 2em;
-		height: 2em;
-            font-size: 3em;
-		text-align: center;
-					line-height: 2em;
-					margin: auto;
-		@include border-radius(1em);
-	}
-    }
-}
-.service {
-    @include grid-span(4, $output-style:'float');
-    &:last-child{
-        padding-right:0;
-    }
-}
-
-#specs {
-    background: $color-blue;
-    color: $color-white;
-    padding: 1em 0;
-    @include clearfix;
-    
-    section{
-        //display: -webkit-flex;
-        //display: flex;
-       // max-width: 900px;
-    }
-
-    h1 {
-        // text-align: right;
-        // width: 40%;
-        // float: left;
-        // padding-top: .5em;
-        // -webkit-flex: 1;
-        // flex: 1;
-    }
-
-    .group {
-        // float: right;
-        // width: 50%;
-        // border-left: 8px solid $color-white;
-        // padding: .5em 0 2% 4%;
-        // margin-left: 4%;
-        // -webkit-flex: 1;
-        // flex: 1;
-    }
-
-    h2 {
-        color: $color-black;
-        font-weight: normal;
-    }
-
-    ul {
-        margin: 0;
-        padding: 0;
-        text-indent: 0;
-        @include clearfix;
-        li {
-            float:left;
-            @extend .btn;
-            background: $color-white;
-            color: $color-black;
-            margin: 0 2% 1em 0;
-            
-            &:last-child {
-                margin-right:0;
-            }
-        }
-    }
-}
-
-#footer {
-    background: $color-black;
-    color: $color-white;
-    a {
-        color: $color-white;
-    }
-    .constrainer {
-        padding: 1em 4%;
-    }
-    .btn {
-        background: $color-white;
-        color: $color-black;
-    }
-}
-
 @import 'print';
