@@ -1,11 +1,11 @@
 name: Scott Stamile Front end Web Developer and Designer
 safe: true
-pygments: true
-
-permalink: /blog/:categories/:title
 
 exclude:
   - config.rb
   - Gemfile
   - Gemfile.lock
   - README.md
+  - .*
+  - CNAME
+  - nohup.out
