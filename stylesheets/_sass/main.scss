@@ -128,7 +128,6 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     @include intro-font;
-    font-weight: 700;
 }
 
 h1,{
@@ -240,6 +239,7 @@ body {
         text-align: right;
     }
 }
+
 /*  STYLING
 ----------------------------------------------------------------------------------------*/
 
@@ -299,4 +299,6 @@ body {
     border-left:none;
     padding: 0;
 }
+
+
 @import 'print';
