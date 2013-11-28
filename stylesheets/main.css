@@ -465,6 +465,11 @@ h1 {
   line-height: 1.5625em;
 }
 
+h2 {
+  font-size: 1.4375em;
+  line-height: 1.63043em;
+}
+
 code,
 pre {
   font-family: Monaco, 'Courier New', monospace;
@@ -525,15 +530,23 @@ a:active {
   box-sizing: border-box;
 }
 
+.container {
+  margin: 1em;
+}
+.container .inner {
+  margin: auto;
+  max-width: 1180px;
+}
+
 .poster {
   display: table;
   width: 100%;
 }
-
-.container {
+.poster .container {
   display: table-cell;
   vertical-align: middle;
   padding: 1em;
+  margin: 0;
 }
 
 .header {
@@ -543,7 +556,7 @@ a:active {
 
 @media (min-width: 830px) {
   .intro {
-    width: 65.21739%;
+    width: 47.82609%;
     float: left;
     margin-right: -100%;
     margin-left: 0%;
@@ -569,10 +582,10 @@ a:active {
 }
 @media (min-width: 830px) {
   .cta {
-    width: 30.43478%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
+    width: 21.73913%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 52.17391%;
     clear: none;
     /* for IE 6/7 */
     *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
@@ -587,6 +600,348 @@ a:active {
     overflow: hidden;
   }
   .cta:after {
+    clear: both;
+  }
+}
+
+#intro {
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
+  *zoom: 1;
+}
+#intro:before, #intro:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#intro:after {
+  clear: both;
+}
+#intro section {
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+@media (min-width: 520px) {
+  #intro section {
+    width: 73.91304%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+    font-size: 1.4375em;
+    line-height: 2.17391em;
+  }
+  #intro section:before, #intro section:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #intro section:after {
+    clear: both;
+  }
+}
+@media (min-width: 960px) {
+  #intro section {
+    width: 65.71429%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+    font-size: 1.75em;
+    line-height: 1.78571em;
+  }
+  #intro section:before, #intro section:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #intro section:after {
+    clear: both;
+  }
+}
+
+#features {
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
+  *zoom: 1;
+  text-align: center;
+}
+#features:before, #features:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#features:after {
+  clear: both;
+}
+#features .responsive h2:before {
+  content: "";
+  display: block;
+  background-color: #b31707;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  background-image: url("/assets/icons/icon_code.png");
+  background-image: url("/assets/icons/icon_iphone.svg"), none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  margin-top: 0.78125em;
+  margin-bottom: 0.78125em;
+}
+@media (min-width: 520px) {
+  #features .responsive {
+    width: 47.82609%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+  }
+  #features .responsive:before, #features .responsive:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #features .responsive:after {
+    clear: both;
+  }
+}
+@media (min-width: 960px) {
+  #features .responsive {
+    width: 22.85714%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+  }
+  #features .responsive:before, #features .responsive:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #features .responsive:after {
+    clear: both;
+  }
+}
+#features .maintainable h2:before {
+  content: "";
+  display: block;
+  background-color: #b31707;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  background-image: url("/assets/icons/icon_code.png");
+  background-image: url("/assets/icons/icon_code.svg"), none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  margin-top: 0.78125em;
+  margin-bottom: 0.78125em;
+}
+@media (min-width: 520px) {
+  #features .maintainable {
+    width: 47.82609%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+  }
+  #features .maintainable:before, #features .maintainable:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #features .maintainable:after {
+    clear: both;
+  }
+}
+@media (min-width: 960px) {
+  #features .maintainable {
+    width: 22.85714%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 25.71429%;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+  }
+  #features .maintainable:before, #features .maintainable:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #features .maintainable:after {
+    clear: both;
+  }
+}
+#features .performance h2:before {
+  content: "";
+  display: block;
+  background-color: #b31707;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  background-image: url("/assets/icons/icon_speed.png");
+  background-image: url("/assets/icons/icon_speed.svg"), none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  margin-top: 0.78125em;
+  margin-bottom: 0.78125em;
+}
+@media (min-width: 520px) {
+  #features .performance {
+    width: 47.82609%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+    clear: both;
+  }
+  #features .performance:before, #features .performance:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #features .performance:after {
+    clear: both;
+  }
+}
+@media (min-width: 960px) {
+  #features .performance {
+    width: 22.85714%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.42857%;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+  }
+  #features .performance:before, #features .performance:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #features .performance:after {
+    clear: both;
+  }
+}
+#features .organized h2:before {
+  content: "";
+  display: block;
+  background-color: #b31707;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  background-image: url("/assets/icons/icon_outline.png");
+  background-image: url("/assets/icons/icon_outline.svg"), none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  margin-top: 0.78125em;
+  margin-bottom: 0.78125em;
+}
+@media (min-width: 520px) {
+  #features .organized {
+    width: 47.82609%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+  }
+  #features .organized:before, #features .organized:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #features .organized:after {
+    clear: both;
+  }
+}
+@media (min-width: 960px) {
+  #features .organized {
+    width: 22.85714%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+  }
+  #features .organized:before, #features .organized:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #features .organized:after {
     clear: both;
   }
 }

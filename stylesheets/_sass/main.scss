@@ -134,7 +134,7 @@ h1,{
     @include adjust-font-size-to(32px);
 }
 
-h2 {}
+h2 {@include adjust-font-size-to(23px,1.5);}
 
 h3 {}
 
@@ -203,8 +203,9 @@ a {
 ----------------------------------------------------------------------------------------*/
 
 $grids: 3;
-$grids: add-grid(6 at 830px);
-$gutters: 1/3;
+$grids: add-grid(8 at 520px);
+$grids: add-grid(12 at 960px);
+$gutters: 1/2;
 $include-clearfix: true;
 
 * {@include box-sizing('border-box');}
@@ -213,15 +214,25 @@ body {
     
 }
 
+.container {
+    margin: 1em;
+    .inner {
+        margin: auto;
+        max-width: 1180px;
+    }
+}
+
 .poster {
     display: table;
     width: 100%;
+    .container {
+        display: table-cell;
+        vertical-align: middle;
+        padding:1em;
+        margin: 0;
+    }
 }
-.container {
-    display: table-cell;
-    vertical-align: middle;
-    padding:1em;
-}
+
 .header {
     max-width: 1120px;
     margin:auto;
@@ -240,6 +251,88 @@ body {
     }
 }
 
+#intro {
+    @include clearfix;
+    section {
+        @include adjust-font-size-to(20px);
+        @include breakpoint(520px) {
+            @include grid-span(6,1);
+            @include adjust-font-size-to(23px);
+        }
+        @include breakpoint(960px) {
+            @include grid-span(8,1);
+            @include adjust-font-size-to(28px);
+        }
+    }
+}
+
+@mixin icon($img_main:null,$img_fallback:null) {
+    content: "";
+    display: block;
+    background-color: $color-red;
+    @include border-radius(2em);
+    width: 4em;
+    height: 4em;
+    margin:auto;
+    @if $img_fallback {background-image: url($img_fallback);}
+    @if $img_main {background-image: url($img_main), none;}
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+    @include leader(.5);
+    @include trailer(.5);
+}
+
+#features {
+    @include clearfix;
+    text-align: center;
+    .responsive {
+    h2:before {
+            @include icon('/assets/icons/icon_iphone.svg','/assets/icons/icon_code.png');
+        }
+        @include breakpoint(520px) {
+            @include grid-span(4,1);
+        }
+        @include breakpoint(960px) {
+            @include grid-span(3,1);
+        }
+    }
+    .maintainable {
+         h2:before {
+            @include icon('/assets/icons/icon_code.svg','/assets/icons/icon_code.png');
+        }
+        @include breakpoint(520px) {
+            @include grid-span(4,5);
+        }
+        @include breakpoint(960px) {
+            @include grid-span(3,4);
+        }
+    }
+    .performance {
+         h2:before {
+            @include icon('/assets/icons/icon_speed.svg','/assets/icons/icon_speed.png');
+        }
+        @include breakpoint(520px) {
+            @include grid-span(4,1);
+            clear: both;
+        }
+        @include breakpoint(960px) {
+            @include grid-span(3,7);
+        }
+    }
+    .organized {
+        h2:before {
+            @include icon('/assets/icons/icon_outline.svg','/assets/icons/icon_outline.png');
+        }
+        @include breakpoint(520px) {
+            @include grid-span(4,5);
+        }
+        @include breakpoint(960px) {
+            @include grid-span(3,10);
+        }
+    }
+}
+
 /*  STYLING
 ----------------------------------------------------------------------------------------*/
 
@@ -247,6 +340,7 @@ body {
     background: $background;
     color: $color-black;
 }
+
 
 .mast {
     @include intro-font;
@@ -262,7 +356,7 @@ body {
     .nameplate {
         @include adjust-font-size-to(28px);
         @include breakpoint(420px) {
-        @include adjust-font-size-to(34px);
+            @include adjust-font-size-to(34px);
         }
         font-weight: 900;
         display: block; 
