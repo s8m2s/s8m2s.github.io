@@ -44,11 +44,11 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
 /* NOTE: Loading svg before ttf for better rendering in chrome for windows */
 @font-face {
     font-family: 'intro caps';
-    src: url('/fonts/Intro_Regular_Caps-webfont.eot');
-    src: url('/fonts/Intro_Regular_Caps-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular') format('svg'),
-         url('/fonts/Intro_Regular_Caps-webfont.woff') format('woff'),
-         url('/fonts/Intro_Regular_Caps-webfont.ttf') format('truetype');
+    src: url('/assets/fonts/Intro_Regular_Caps-webfont.eot');
+    src: url('/assets/fonts/Intro_Regular_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular') format('svg'),
+         url('/assets/fonts/Intro_Regular_Caps-webfont.woff') format('woff'),
+         url('/assets/fonts/Intro_Regular_Caps-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -56,11 +56,11 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
 
 @font-face {
     font-family: 'intro caps';
-    src: url('/fonts/Intro_Bold_Caps-webfont.eot');
-    src: url('/fonts/Intro_Bold_Caps-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular') format('svg'),
-         url('/fonts/Intro_Bold_Caps-webfont.woff') format('woff'),
-         url('/fonts/Intro_Bold_Caps-webfont.ttf') format('truetype');
+    src: url('/assets/fonts/Intro_Bold_Caps-webfont.eot');
+    src: url('/assets/fonts/Intro_Bold_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular') format('svg'),
+         url('/assets/fonts/Intro_Bold_Caps-webfont.woff') format('woff'),
+         url('/assets/fonts/Intro_Bold_Caps-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -68,11 +68,11 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
 
 @font-face {
     font-family: 'intro caps';
-    src: url('/fonts/Intro_Black_Caps-webfont.eot');
-    src: url('/fonts/Intro_Black_Caps-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/Intro_Black_Caps-webfont.svg#intro_black_capsregular') format('svg'),
-         url('/fonts/Intro_Black_Caps-webfont.woff') format('woff'),
-         url('/fonts/Intro_Black_Caps-w febfont.ttf') format('truetype');
+    src: url('/assets/fonts/Intro_Black_Caps-webfont.eot');
+    src: url('/assets/fonts/Intro_Black_Caps-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/Intro_Black_Caps-webfont.svg#intro_black_capsregular') format('svg'),
+         url('/assets/fonts/Intro_Black_Caps-webfont.woff') format('woff'),
+         url('/assets/fonts/Intro_Black_Caps-w febfont.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -80,11 +80,11 @@ body {-webkit-tap-highlight-color: rgba(131, 131, 131, 0.5);}
 
 @font-face {
     font-family: 'icons';
-    src:url('/fonts/icons.eot');
-    src:url('/fonts/icons.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/icons.woff') format('woff'),
-        url('/fonts/icons.ttf') format('truetype'),
-        url('/fonts/icons.svg#icons') format('svg');
+    src:url('/assets/fonts/icons.eot');
+    src:url('/assets/fonts/icons.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/icons.woff') format('woff'),
+        url('/assets/fonts/icons.ttf') format('truetype'),
+        url('/assets/fonts/icons.svg#icons') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -111,14 +111,14 @@ $base-line-height: 25px;
     -webkit-font-smoothing: antialiased;
 }
 
-@mixin button($radius) {
-    font-family: "intro caps";
-    @include border-radius($radius);
+@mixin button($radius: 0) {
+    @include intro-font;
     font-weight: 700;
-    line-height: 2.5em;
+    @include border-radius($radius);
+    line-height: 2em;
     padding: .08em 1.5em 0 1.5em;
     text-align: center;
-    display: inline-block;
+    display: block;
     text-decoration: none;
 }
 
@@ -202,17 +202,13 @@ a {
 /*  LAYOUT
 ----------------------------------------------------------------------------------------*/
 
-$grids: 3;
+$grids: 4;
 $grids: add-grid(8 at 520px);
 $grids: add-grid(12 at 960px);
 $gutters: 1/2;
 $include-clearfix: true;
 
 * {@include box-sizing('border-box');}
-
-body {
-    
-}
 
 .container {
     margin: 1em;
@@ -250,7 +246,15 @@ body {
         text-align: right;
     }
 }
-
+nav {
+    @include breakpoint(830px) {
+    }
+    ul {
+        @include no-bullets;
+        padding-left:0;
+        text-align: center;
+    }
+}
 #intro {
     @include clearfix;
     section {
@@ -262,6 +266,99 @@ body {
         @include breakpoint(960px) {
             @include grid-span(8,1);
             @include adjust-font-size-to(28px);
+        }
+    }
+}
+
+#features {
+    @include clearfix;
+    text-align: center;
+    .responsive {
+        @include breakpoint(520px) {
+            @include grid-span(4,1);
+        }
+        @include breakpoint(960px) {
+            @include grid-span(3,1);
+        }
+    }
+    .maintainable {
+        @include breakpoint(520px) {
+            @include grid-span(4,5);
+        }
+        @include breakpoint(960px) {
+            @include grid-span(3,4);
+        }
+    }
+    .performance {
+        @include breakpoint(520px) {
+            @include grid-span(4,1);
+            clear: both;
+        }
+        @include breakpoint(960px) {
+            @include grid-span(3,7);
+        }
+    }
+    .organized {
+        @include breakpoint(520px) {
+            @include grid-span(4,5);
+        }
+        @include breakpoint(960px) {
+            @include grid-span(3,10);
+        }
+    }
+}
+
+/*  STYLING
+----------------------------------------------------------------------------------------*/
+
+body {
+    background: $background;
+    color: $color-black;
+}
+
+.mast {
+    @include intro-font;
+    background: $color-red;
+    color: $color-white;
+    a {
+        text-decoration: none;
+        color: $color-white;
+        &:hover,
+        &:focus {
+            color: $color-blue;
+        }
+    }
+    .nameplate {
+        @include adjust-font-size-to(28px);
+        @include breakpoint(420px) {
+            @include adjust-font-size-to(34px);
+        }
+        font-weight: 900;
+        display: block; 
+    }
+    h1 {
+        @include adjust-font-size-to(16px);
+        font-weight: normal;
+        margin: 0;
+        display: inline;
+    }
+    p {
+        display: inline;
+    }
+    nav li {
+        max-width: 15em;
+        margin: auto;
+    }
+    .btn {
+        @include button(.5em);
+        border: .2em solid $color-white;
+        background: transparent;
+        @include leader(.5);
+        @include trailer(.5);
+        &:hover,
+        &:focus {
+            background: $color-blue;
+            color: $color-white;
         }
     }
 }
@@ -284,115 +381,26 @@ body {
 }
 
 #features {
-    @include clearfix;
-    text-align: center;
     .responsive {
-    h2:before {
+        h2:before {
             @include icon('/assets/icons/icon_iphone.svg','/assets/icons/icon_code.png');
-        }
-        @include breakpoint(520px) {
-            @include grid-span(4,1);
-        }
-        @include breakpoint(960px) {
-            @include grid-span(3,1);
         }
     }
     .maintainable {
          h2:before {
             @include icon('/assets/icons/icon_code.svg','/assets/icons/icon_code.png');
         }
-        @include breakpoint(520px) {
-            @include grid-span(4,5);
-        }
-        @include breakpoint(960px) {
-            @include grid-span(3,4);
-        }
     }
     .performance {
          h2:before {
             @include icon('/assets/icons/icon_speed.svg','/assets/icons/icon_speed.png');
-        }
-        @include breakpoint(520px) {
-            @include grid-span(4,1);
-            clear: both;
-        }
-        @include breakpoint(960px) {
-            @include grid-span(3,7);
         }
     }
     .organized {
         h2:before {
             @include icon('/assets/icons/icon_outline.svg','/assets/icons/icon_outline.png');
         }
-        @include breakpoint(520px) {
-            @include grid-span(4,5);
-        }
-        @include breakpoint(960px) {
-            @include grid-span(3,10);
-        }
     }
 }
-
-/*  STYLING
-----------------------------------------------------------------------------------------*/
-
-body {
-    background: $background;
-    color: $color-black;
-}
-
-
-.mast {
-    @include intro-font;
-    background: $color-red;
-    color: $color-white;
-    a {
-        color: $color-white;
-        &:hover,
-        &:focus {
-            color: $color-blue;
-        }
-    }
-    .nameplate {
-        @include adjust-font-size-to(28px);
-        @include breakpoint(420px) {
-            @include adjust-font-size-to(34px);
-        }
-        font-weight: 900;
-        display: block; 
-    }
-    h1 {
-        @include adjust-font-size-to(16px);
-        font-weight: normal;
-        margin: 0;
-    }
-    .btn {
-        @include button(.5em);
-        border: .2em solid $color-white;
-        @include adjust-font-size-to(18px);
-        padding: .65em 1.5em .6em 1.5em;
-        margin-top: 2em;
-        @include breakpoint(830px) {margin-top:0;}
-        background: transparent;
-        &:hover,
-        &:focus {
-            background: $color-blue;
-            color: $color-white;
-        }
-    }
-}
-
-
-.greeting p {
-    font-weight: 700;
-    @include adjust-font-size-to(18px);
-    & a {text-decoration: none;}
-    @include rhythm-borders(4px);
-    border-top:none;
-    border-right:none;
-    border-left:none;
-    padding: 0;
-}
-
 
 @import 'print';

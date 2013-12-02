@@ -398,8 +398,8 @@ body {
 /* NOTE: Loading svg before ttf for better rendering in chrome for windows */
 @font-face {
   font-family: 'intro caps';
-  src: url("/fonts/Intro_Regular_Caps-webfont.eot");
-  src: url("/fonts/Intro_Regular_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular") format("svg"), url("/fonts/Intro_Regular_Caps-webfont.woff") format("woff"), url("/fonts/Intro_Regular_Caps-webfont.ttf") format("truetype");
+  src: url("/assets/fonts/Intro_Regular_Caps-webfont.eot");
+  src: url("/assets/fonts/Intro_Regular_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Intro_Regular_Caps-webfont.svg#intro_regular_capsregular") format("svg"), url("/assets/fonts/Intro_Regular_Caps-webfont.woff") format("woff"), url("/assets/fonts/Intro_Regular_Caps-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -407,8 +407,8 @@ body {
 
 @font-face {
   font-family: 'intro caps';
-  src: url("/fonts/Intro_Bold_Caps-webfont.eot");
-  src: url("/fonts/Intro_Bold_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular") format("svg"), url("/fonts/Intro_Bold_Caps-webfont.woff") format("woff"), url("/fonts/Intro_Bold_Caps-webfont.ttf") format("truetype");
+  src: url("/assets/fonts/Intro_Bold_Caps-webfont.eot");
+  src: url("/assets/fonts/Intro_Bold_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Intro_Bold_Caps-webfont.svg#intro_bold_capsregular") format("svg"), url("/assets/fonts/Intro_Bold_Caps-webfont.woff") format("woff"), url("/assets/fonts/Intro_Bold_Caps-webfont.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -416,8 +416,8 @@ body {
 
 @font-face {
   font-family: 'intro caps';
-  src: url("/fonts/Intro_Black_Caps-webfont.eot");
-  src: url("/fonts/Intro_Black_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Intro_Black_Caps-webfont.svg#intro_black_capsregular") format("svg"), url("/fonts/Intro_Black_Caps-webfont.woff") format("woff"), url("/fonts/Intro_Black_Caps-w febfont.ttf") format("truetype");
+  src: url("/assets/fonts/Intro_Black_Caps-webfont.eot");
+  src: url("/assets/fonts/Intro_Black_Caps-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Intro_Black_Caps-webfont.svg#intro_black_capsregular") format("svg"), url("/assets/fonts/Intro_Black_Caps-webfont.woff") format("woff"), url("/assets/fonts/Intro_Black_Caps-w febfont.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
@@ -425,8 +425,8 @@ body {
 
 @font-face {
   font-family: 'icons';
-  src: url("/fonts/icons.eot");
-  src: url("/fonts/icons.eot?#iefix") format("embedded-opentype"), url("/fonts/icons.woff") format("woff"), url("/fonts/icons.ttf") format("truetype"), url("/fonts/icons.svg#icons") format("svg");
+  src: url("/assets/fonts/icons.eot");
+  src: url("/assets/fonts/icons.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/icons.woff") format("woff"), url("/assets/fonts/icons.ttf") format("truetype"), url("/assets/fonts/icons.svg#icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -604,6 +604,17 @@ a:active {
   }
 }
 
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
 #intro {
   /* for IE 6/7 */
   *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
@@ -688,26 +699,6 @@ a:active {
 #features:after {
   clear: both;
 }
-#features .responsive h2:before {
-  content: "";
-  display: block;
-  background-color: #b31707;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
-  border-radius: 2em;
-  width: 4em;
-  height: 4em;
-  margin: auto;
-  background-image: url("/assets/icons/icon_code.png");
-  background-image: url("/assets/icons/icon_iphone.svg"), none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1.5em;
-  margin-top: 0.78125em;
-  margin-bottom: 0.78125em;
-}
 @media (min-width: 520px) {
   #features .responsive {
     width: 47.82609%;
@@ -751,26 +742,6 @@ a:active {
   #features .responsive:after {
     clear: both;
   }
-}
-#features .maintainable h2:before {
-  content: "";
-  display: block;
-  background-color: #b31707;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
-  border-radius: 2em;
-  width: 4em;
-  height: 4em;
-  margin: auto;
-  background-image: url("/assets/icons/icon_code.png");
-  background-image: url("/assets/icons/icon_code.svg"), none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1.5em;
-  margin-top: 0.78125em;
-  margin-bottom: 0.78125em;
 }
 @media (min-width: 520px) {
   #features .maintainable {
@@ -816,26 +787,6 @@ a:active {
     clear: both;
   }
 }
-#features .performance h2:before {
-  content: "";
-  display: block;
-  background-color: #b31707;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
-  border-radius: 2em;
-  width: 4em;
-  height: 4em;
-  margin: auto;
-  background-image: url("/assets/icons/icon_speed.png");
-  background-image: url("/assets/icons/icon_speed.svg"), none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1.5em;
-  margin-top: 0.78125em;
-  margin-bottom: 0.78125em;
-}
 @media (min-width: 520px) {
   #features .performance {
     width: 47.82609%;
@@ -880,26 +831,6 @@ a:active {
   #features .performance:after {
     clear: both;
   }
-}
-#features .organized h2:before {
-  content: "";
-  display: block;
-  background-color: #b31707;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
-  border-radius: 2em;
-  width: 4em;
-  height: 4em;
-  margin: auto;
-  background-image: url("/assets/icons/icon_outline.png");
-  background-image: url("/assets/icons/icon_outline.svg"), none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1.5em;
-  margin-top: 0.78125em;
-  margin-bottom: 0.78125em;
 }
 @media (min-width: 520px) {
   #features .organized {
@@ -960,6 +891,7 @@ body {
   color: #eae0db;
 }
 .mast a {
+  text-decoration: none;
   color: #eae0db;
 }
 .mast a:hover, .mast a:focus {
@@ -982,51 +914,118 @@ body {
   line-height: 1.5625em;
   font-weight: normal;
   margin: 0;
+  display: inline;
+}
+.mast p {
+  display: inline;
+}
+.mast nav li {
+  max-width: 15em;
+  margin: auto;
 }
 .mast .btn {
-  font-family: "intro caps";
+  font-family: 'intro caps', arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
   border-radius: 0.5em;
-  font-weight: 700;
-  line-height: 2.5em;
+  line-height: 2em;
   padding: .08em 1.5em 0 1.5em;
   text-align: center;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   border: 0.2em solid #eae0db;
-  font-size: 1.125em;
-  line-height: 1.38889em;
-  padding: .65em 1.5em .6em 1.5em;
-  margin-top: 2em;
   background: transparent;
-}
-@media (min-width: 830px) {
-  .mast .btn {
-    margin-top: 0;
-  }
+  margin-top: 0.78125em;
+  margin-bottom: 0.78125em;
 }
 .mast .btn:hover, .mast .btn:focus {
   background: #9da0aa;
   color: #eae0db;
 }
 
-.greeting p {
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 1.38889em;
-  border-style: solid;
-  border-width: 0.25em;
-  padding: 1.3125em;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  padding: 0;
+#features .responsive h2:before {
+  content: "";
+  display: block;
+  background-color: #b31707;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  background-image: url("/assets/icons/icon_code.png");
+  background-image: url("/assets/icons/icon_iphone.svg"), none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  margin-top: 0.78125em;
+  margin-bottom: 0.78125em;
 }
-.greeting p a {
-  text-decoration: none;
+#features .maintainable h2:before {
+  content: "";
+  display: block;
+  background-color: #b31707;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  background-image: url("/assets/icons/icon_code.png");
+  background-image: url("/assets/icons/icon_code.svg"), none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  margin-top: 0.78125em;
+  margin-bottom: 0.78125em;
+}
+#features .performance h2:before {
+  content: "";
+  display: block;
+  background-color: #b31707;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  background-image: url("/assets/icons/icon_speed.png");
+  background-image: url("/assets/icons/icon_speed.svg"), none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  margin-top: 0.78125em;
+  margin-bottom: 0.78125em;
+}
+#features .organized h2:before {
+  content: "";
+  display: block;
+  background-color: #b31707;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  width: 4em;
+  height: 4em;
+  margin: auto;
+  background-image: url("/assets/icons/icon_outline.png");
+  background-image: url("/assets/icons/icon_outline.svg"), none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+  margin-top: 0.78125em;
+  margin-bottom: 0.78125em;
 }
 
 /*  PRINT STYLES
