@@ -1111,6 +1111,19 @@ body {
 #work ul {
   padding: 0;
   list-style-type: none;
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
+  *zoom: 1;
+}
+#work ul:before, #work ul:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#work ul:after {
+  clear: both;
 }
 #work ul li {
   padding: 0;
@@ -1118,6 +1131,53 @@ body {
 }
 #work ul li:first-child {
   margin: 0;
+}
+@media (min-width: 520px) {
+  #work ul li:nth-child(odd) {
+    width: 47.82609%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+    clear: both;
+    margin-top: 0;
+  }
+  #work ul li:nth-child(odd):before, #work ul li:nth-child(odd):after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #work ul li:nth-child(odd):after {
+    clear: both;
+  }
+}
+@media (min-width: 520px) {
+  #work ul li:nth-child(even) {
+    width: 47.82609%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    /* for IE 6/7 */
+    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+    /* non-JS fallback */
+    *zoom: 1;
+    margin-top: 0;
+  }
+  #work ul li:nth-child(even):before, #work ul li:nth-child(even):after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  #work ul li:nth-child(even):after {
+    clear: both;
+  }
 }
 
 #footer {
