@@ -182,12 +182,16 @@ hr {
     border-top: 1px solid #ccc;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
 /*  LINKS
 ----------------------------------------------------------------------------------------*/
 
 a {
-    color: #3f3f3f;
+    color: $color-red;
     &:hover, &:focus {
         color: #000;
         border-color: #000;
@@ -320,6 +324,7 @@ body {
     @include intro-font;
     background: $color-red;
     color: $color-white;
+    text-align: center;
     a {
         text-decoration: none;
         color: $color-white;
@@ -389,17 +394,114 @@ body {
     .maintainable {
          h2:before {
             @include icon('/assets/icons/icon_code.svg','/assets/icons/icon_code.png');
+            background-size: 2.2em;
         }
     }
     .performance {
          h2:before {
             @include icon('/assets/icons/icon_speed.svg','/assets/icons/icon_speed.png');
+            background-size: 2.2em;
+            background-position-y: 1.15em;
         }
     }
     .organized {
         h2:before {
             @include icon('/assets/icons/icon_outline.svg','/assets/icons/icon_outline.png');
+            background-size: 2.2em;
         }
+    }
+}
+
+#specs {
+    background: $color-blue;
+    color: $color-white;
+    padding: 1em 0;
+    @include clearfix;
+    margin: 0;
+    .inner {
+        padding:1em;
+    }
+    
+    // section{
+    //     display: -webkit-flex;
+    //     display: flex;
+    //    max-width: 900px;
+    // }
+
+    // h1 {
+    //     text-align: right;
+    //     width: 40%;
+    //     float: left;
+    //     padding-top: .5em;
+    //     -webkit-flex: 1;
+    //     flex: 1;
+    // }
+
+    // .group {
+    //     float: right;
+    //     width: 50%;
+    //     border-left: 8px solid $color-white;
+    //     padding: .5em 0 2% 4%;
+    //     margin-left: 4%;
+    //     -webkit-flex: 1;
+    //     flex: 1;
+    // }
+
+    h2 {
+        color: $color-black;
+        font-weight: normal;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+        @include clearfix;
+        li {
+            float:left;
+            @include button(.5em);
+            background: $color-white;
+            color: $color-black;
+            margin: 0 2% 1em 0;
+            
+            &:last-child {
+                margin-right:0;
+            }
+        }
+    }
+}
+
+#work {
+    img {
+        border: 1px solid #D8D9DF;
+    }
+    ul {
+        padding:0;
+        list-style-type: none;
+        li {
+            padding:0;
+            margin: 2em 0;
+            &:first-child {
+                margin:0;
+            }
+        }
+    }
+}
+
+#footer {
+    background: $color-black;
+    color: $color-white;
+    margin: 0;
+    footer {
+        padding:1em;
+    }
+    a {
+        color: $color-white;
+    }
+    .btn {
+        @include button(.5em);
+        background: $color-white;
+        color: $color-black;
     }
 }
 

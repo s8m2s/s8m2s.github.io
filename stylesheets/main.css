@@ -509,10 +509,15 @@ hr {
   border-top: 1px solid #ccc;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /*  LINKS
 ----------------------------------------------------------------------------------------*/
 a {
-  color: #3f3f3f;
+  color: #b31707;
 }
 a:hover, a:focus {
   color: #000;
@@ -889,6 +894,7 @@ body {
   text-transform: uppercase;
   background: #b31707;
   color: #eae0db;
+  text-align: center;
 }
 .mast a {
   text-decoration: none;
@@ -986,6 +992,7 @@ body {
   background-size: 1.5em;
   margin-top: 0.78125em;
   margin-bottom: 0.78125em;
+  background-size: 2.2em;
 }
 #features .performance h2:before {
   content: "";
@@ -1006,6 +1013,8 @@ body {
   background-size: 1.5em;
   margin-top: 0.78125em;
   margin-bottom: 0.78125em;
+  background-size: 2.2em;
+  background-position-y: 1.15em;
 }
 #features .organized h2:before {
   content: "";
@@ -1026,6 +1035,118 @@ body {
   background-size: 1.5em;
   margin-top: 0.78125em;
   margin-bottom: 0.78125em;
+  background-size: 2.2em;
+}
+
+#specs {
+  background: #9da0aa;
+  color: #eae0db;
+  padding: 1em 0;
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
+  *zoom: 1;
+  margin: 0;
+}
+#specs:before, #specs:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#specs:after {
+  clear: both;
+}
+#specs .inner {
+  padding: 1em;
+}
+#specs h2 {
+  color: #41413e;
+  font-weight: normal;
+}
+#specs ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
+  *zoom: 1;
+}
+#specs ul:before, #specs ul:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+#specs ul:after {
+  clear: both;
+}
+#specs ul li {
+  float: left;
+  font-family: 'intro caps', arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  line-height: 2em;
+  padding: .08em 1.5em 0 1.5em;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  background: #eae0db;
+  color: #41413e;
+  margin: 0 2% 1em 0;
+}
+#specs ul li:last-child {
+  margin-right: 0;
+}
+
+#work img {
+  border: 1px solid #D8D9DF;
+}
+#work ul {
+  padding: 0;
+  list-style-type: none;
+}
+#work ul li {
+  padding: 0;
+  margin: 2em 0;
+}
+#work ul li:first-child {
+  margin: 0;
+}
+
+#footer {
+  background: #41413e;
+  color: #eae0db;
+  margin: 0;
+}
+#footer footer {
+  padding: 1em;
+}
+#footer a {
+  color: #eae0db;
+}
+#footer .btn {
+  font-family: 'intro caps', arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  border-radius: 0.5em;
+  line-height: 2em;
+  padding: .08em 1.5em 0 1.5em;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  background: #eae0db;
+  color: #41413e;
 }
 
 /*  PRINT STYLES
