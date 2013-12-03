@@ -1,17 +1,13 @@
+---
+---
 /* humanstxt.org */
-
-
-/* TEAM */    
 
 Name:			Scott Stamile
 Location:		Long Island, New York
 Website:		www.scottstamile.com
 email:			scottstamile@gmail.com
 
-
-/* SITE */
-
-Last update:	2012/12/10 
-Standards:		HTML5, CSS3
-Components:		Java Script, PHP, jQuery, live.js, SASS, modernizr
-Software:		Sublime Text 2, Adobe Photoshop, Illustrator(for SVG's), Google Chrome
+Last update:	{{ site.time | date: '%m/%d/%Y' }}
+Standards:  	HTML5, CSS3
+Components: 	Java Script, SASS, modernizr
+Software:   	Sublime Text 3, Adobe Photoshop, Illustrator, Google Chrome
