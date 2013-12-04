@@ -1105,8 +1105,13 @@ body {
   margin-right: 0;
 }
 
-#work img {
+#work .crop {
   border: 1px solid #D8D9DF;
+  height: 300px;
+  overflow: hidden;
+}
+#work .crop img {
+  margin-top: -75px;
 }
 #work ul {
   padding: 0;
