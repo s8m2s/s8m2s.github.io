@@ -236,6 +236,12 @@ $include-clearfix: true;
 .header {
     max-width: 1120px;
     margin:auto;
+    @include breakpoint(520px) {
+        width: column-span(6,2);
+    }
+    @include breakpoint(960px) {
+        width: column-span(8,2);
+    }
 }
 
 .intro {
@@ -325,6 +331,7 @@ body {
     background: $color-red;
     color: $color-white;
     text-align: center;
+    @include adjust-font-size-to(18px);
     a {
         text-decoration: none;
         color: $color-white;
@@ -334,15 +341,16 @@ body {
         }
     }
     .nameplate {
-        @include adjust-font-size-to(28px);
+        @include adjust-font-size-to(23px);
         @include breakpoint(420px) {
-            @include adjust-font-size-to(34px);
+            @include adjust-font-size-to(23px);
         }
+        margin:0;
         font-weight: 900;
         display: block; 
     }
     h1 {
-        @include adjust-font-size-to(16px);
+        @include adjust-font-size-to(18px);
         font-weight: normal;
         margin: 0;
         display: inline;
@@ -350,9 +358,15 @@ body {
     p {
         display: inline;
     }
-    nav li {
-        max-width: 15em;
+    nav {
         margin: auto;
+        margin-top:3em;
+        @include breakpoint(520px) {
+            max-width: column-span(4,2);
+        }
+        @include breakpoint(960px) {
+            max-width: column-span(8,2);
+        }
     }
     .btn {
         @include button(.5em);
@@ -388,7 +402,7 @@ body {
 #features {
     .responsive {
         h2:before {
-            @include icon('/assets/icons/icon_iphone.svg','/assets/icons/icon_code.png');
+            @include icon('/assets/icons/icon_iphone.svg','/assets/icons/icon_iphone.png');
         }
     }
     .maintainable {
@@ -474,12 +488,12 @@ body {
 #work {
     .crop {
         border: 1px solid #D8D9DF;
-        height: 300px;
+        height: 250px;
         overflow: hidden;
     }
 
     .crop img {
-        margin-top: -75px;
+        margin-top: 0px;
     }
     ul {
         padding:0;
@@ -522,6 +536,23 @@ body {
         @include button(.5em);
         background: $color-white;
         color: $color-black;
+    }
+}
+
+.view-source {
+    position: absolute;
+    top: .5em;
+    right: 1em;
+    &:after {
+        content: "";
+        display: inline-block;
+        background-image: url('/assets/icons/icon_github.png');
+        background-image: url('/assets/icons/icon_github.svg'), none;
+        width: 1.5em;
+        height: 1.5em;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 1.5em;
     }
 }
 

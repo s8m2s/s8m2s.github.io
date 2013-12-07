@@ -558,6 +558,16 @@ a:active {
   max-width: 1120px;
   margin: auto;
 }
+@media (min-width: 520px) {
+  .header {
+    width: 73.91304%;
+  }
+}
+@media (min-width: 960px) {
+  .header {
+    width: 65.71429%;
+  }
+}
 
 @media (min-width: 830px) {
   .intro {
@@ -895,6 +905,8 @@ body {
   background: #b31707;
   color: #eae0db;
   text-align: center;
+  font-size: 1.125em;
+  line-height: 1.38889em;
 }
 .mast a {
   text-decoration: none;
@@ -904,20 +916,21 @@ body {
   color: #9da0aa;
 }
 .mast .nameplate {
-  font-size: 1.75em;
-  line-height: 1.78571em;
+  font-size: 1.4375em;
+  line-height: 2.17391em;
+  margin: 0;
   font-weight: 900;
   display: block;
 }
 @media (min-width: 420px) {
   .mast .nameplate {
-    font-size: 2.125em;
-    line-height: 1.47059em;
+    font-size: 1.4375em;
+    line-height: 2.17391em;
   }
 }
 .mast h1 {
-  font-size: 1em;
-  line-height: 1.5625em;
+  font-size: 1.125em;
+  line-height: 1.38889em;
   font-weight: normal;
   margin: 0;
   display: inline;
@@ -925,9 +938,19 @@ body {
 .mast p {
   display: inline;
 }
-.mast nav li {
-  max-width: 15em;
+.mast nav {
   margin: auto;
+  margin-top: 3em;
+}
+@media (min-width: 520px) {
+  .mast nav {
+    max-width: 47.82609%;
+  }
+}
+@media (min-width: 960px) {
+  .mast nav {
+    max-width: 65.71429%;
+  }
 }
 .mast .btn {
   font-family: 'intro caps', arial, sans-serif;
@@ -965,7 +988,7 @@ body {
   width: 4em;
   height: 4em;
   margin: auto;
-  background-image: url("/assets/icons/icon_code.png");
+  background-image: url("/assets/icons/icon_iphone.png");
   background-image: url("/assets/icons/icon_iphone.svg"), none;
   background-position: center;
   background-repeat: no-repeat;
@@ -1107,11 +1130,11 @@ body {
 
 #work .crop {
   border: 1px solid #D8D9DF;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
 }
 #work .crop img {
-  margin-top: -75px;
+  margin-top: 0px;
 }
 #work ul {
   padding: 0;
@@ -1212,6 +1235,23 @@ body {
   text-decoration: none;
   background: #eae0db;
   color: #41413e;
+}
+
+.view-source {
+  position: absolute;
+  top: .5em;
+  right: 1em;
+}
+.view-source:after {
+  content: "";
+  display: inline-block;
+  background-image: url("/assets/icons/icon_github.png");
+  background-image: url("/assets/icons/icon_github.svg"), none;
+  width: 1.5em;
+  height: 1.5em;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 1.5em;
 }
 
 /*  PRINT STYLES
