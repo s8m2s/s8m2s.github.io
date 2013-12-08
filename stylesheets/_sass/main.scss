@@ -234,30 +234,21 @@ $include-clearfix: true;
 }
 
 .header {
-    max-width: 1120px;
+    max-width: 1180px;
     margin:auto;
     @include breakpoint(520px) {
-        width: column-span(6,2);
+        width: column-span(6,1);
     }
     @include breakpoint(960px) {
-        width: column-span(8,2);
-    }
-}
-
-.intro {
-    @include breakpoint(830px) {
-        @include grid-span(4,1);
-    }
-}
-.cta {
-    text-align: center;
-    @include breakpoint(830px) {
-        @include grid-span(2,5);
-        text-align: right;
+        width: column-span(8,1);
     }
 }
 nav {
-    @include breakpoint(830px) {
+    margin: auto;
+    margin-top:3em;
+    width: 80%;
+    @include breakpoint(960px) {
+        width: 60%;
     }
     ul {
         @include no-bullets;
@@ -265,6 +256,7 @@ nav {
         text-align: center;
     }
 }
+
 #intro {
     @include clearfix;
     section {
@@ -357,16 +349,6 @@ body {
     }
     p {
         display: inline;
-    }
-    nav {
-        margin: auto;
-        margin-top:3em;
-        @include breakpoint(520px) {
-            max-width: column-span(4,2);
-        }
-        @include breakpoint(960px) {
-            max-width: column-span(8,2);
-        }
     }
     .btn {
         @include button(.5em);

@@ -555,7 +555,7 @@ a:active {
 }
 
 .header {
-  max-width: 1120px;
+  max-width: 1180px;
   margin: auto;
 }
 @media (min-width: 520px) {
@@ -569,56 +569,16 @@ a:active {
   }
 }
 
-@media (min-width: 830px) {
-  .intro {
-    width: 47.82609%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0%;
-    clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-  }
-  .intro:before, .intro:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  .intro:after {
-    clear: both;
+nav {
+  margin: auto;
+  margin-top: 3em;
+  width: 80%;
+}
+@media (min-width: 960px) {
+  nav {
+    width: 60%;
   }
 }
-
-.cta {
-  text-align: center;
-}
-@media (min-width: 830px) {
-  .cta {
-    width: 21.73913%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 52.17391%;
-    clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-    text-align: right;
-  }
-  .cta:before, .cta:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  .cta:after {
-    clear: both;
-  }
-}
-
 nav ul {
   list-style: none;
   padding-left: 0;
@@ -937,20 +897,6 @@ body {
 }
 .mast p {
   display: inline;
-}
-.mast nav {
-  margin: auto;
-  margin-top: 3em;
-}
-@media (min-width: 520px) {
-  .mast nav {
-    max-width: 47.82609%;
-  }
-}
-@media (min-width: 960px) {
-  .mast nav {
-    max-width: 65.71429%;
-  }
 }
 .mast .btn {
   font-family: 'intro caps', arial, sans-serif;
