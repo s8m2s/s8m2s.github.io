@@ -416,6 +416,7 @@ body {
     margin: 0;
     .inner {
         padding:1em;
+        max-width: 1212px; // temp fix
     }
     
     // section{
@@ -508,6 +509,9 @@ body {
     background: $color-black;
     color: $color-white;
     margin: 0;
+    .inner {
+        max-width: 1212px; // temp fix
+    }
     footer {
         padding:1em;
     }

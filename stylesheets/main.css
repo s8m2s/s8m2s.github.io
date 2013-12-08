@@ -1028,6 +1028,7 @@ body {
 }
 #specs .inner {
   padding: 1em;
+  max-width: 1212px;
 }
 #specs h2 {
   color: #41413e;
@@ -1158,6 +1159,9 @@ body {
   background: #41413e;
   color: #eae0db;
   margin: 0;
+}
+#footer .inner {
+  max-width: 1212px;
 }
 #footer footer {
   padding: 1em;
