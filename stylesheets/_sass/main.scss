@@ -342,7 +342,7 @@ body {
         display: block; 
     }
     h1 {
-        @include adjust-font-size-to(18px);
+        font-size:1em;
         font-weight: normal;
         margin: 0;
         display: inline;
