@@ -889,8 +889,7 @@ body {
   }
 }
 .mast h1 {
-  font-size: 1.125em;
-  line-height: 1.38889em;
+  font-size: 1em;
   font-weight: normal;
   margin: 0;
   display: inline;
@@ -1075,12 +1074,8 @@ body {
   margin-right: 0;
 }
 
-#work .crop {
+#work img {
   border: 1px solid #D8D9DF;
-  height: 250px;
-  overflow: hidden;
-}
-#work .crop img {
   margin-top: 0px;
 }
 #work ul {

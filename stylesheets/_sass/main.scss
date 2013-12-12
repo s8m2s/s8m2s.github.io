@@ -469,13 +469,9 @@ body {
 }
 
 #work {
-    .crop {
-        border: 1px solid #D8D9DF;
-        height: 250px;
-        overflow: hidden;
-    }
 
-    .crop img {
+    img {
+        border: 1px solid #D8D9DF;
         margin-top: 0px;
     }
     ul {
