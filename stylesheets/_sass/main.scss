@@ -362,26 +362,26 @@ body {
 #features {
     .responsive {
         h2:before {
-            @include icon('/assets/icons/icon_iphone.svg','/assets/icons/icon_iphone.png');
+            @include icon('/assets/icons/icon_iphone.svg','/assets/icons/icon_iphone-34.png');
         }
     }
     .maintainable {
          h2:before {
-            @include icon('/assets/icons/icon_code.svg','/assets/icons/icon_code.png');
-            background-size: 2.2em;
+            @include icon('/assets/icons/icon_code.svg','/assets/icons/icon_code-50.png');
+            background-size: 50px;
         }
     }
     .performance {
          h2:before {
-            @include icon('/assets/icons/icon_speed.svg','/assets/icons/icon_speed.png');
-            background-size: 2.2em;
+            @include icon('/assets/icons/icon_speed.svg','/assets/icons/icon_speed-49.png');
+            background-size: 49px;
             background-position-y: 1.15em;
         }
     }
     .organized {
         h2:before {
-            @include icon('/assets/icons/icon_outline.svg','/assets/icons/icon_outline.png');
-            background-size: 2.2em;
+            @include icon('/assets/icons/icon_outline.svg','/assets/icons/icon_outline-50.png');
+            background-size: 50px;
         }
     }
 }

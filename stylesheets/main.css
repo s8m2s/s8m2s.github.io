@@ -914,7 +914,7 @@ body {
   width: 4em;
   height: 4em;
   margin: auto;
-  background-image: url("/assets/icons/icon_iphone.png");
+  background-image: url("/assets/icons/icon_iphone-34.png");
   background-image: url("/assets/icons/icon_iphone.svg"), none;
   background-position: center;
   background-repeat: no-repeat;
@@ -934,14 +934,14 @@ body {
   width: 4em;
   height: 4em;
   margin: auto;
-  background-image: url("/assets/icons/icon_code.png");
+  background-image: url("/assets/icons/icon_code-50.png");
   background-image: url("/assets/icons/icon_code.svg"), none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 34px;
   margin-top: 0.78125em;
   margin-bottom: 0.78125em;
-  background-size: 2.2em;
+  background-size: 50px;
 }
 #features .performance h2:before {
   content: "";
@@ -955,14 +955,14 @@ body {
   width: 4em;
   height: 4em;
   margin: auto;
-  background-image: url("/assets/icons/icon_speed.png");
+  background-image: url("/assets/icons/icon_speed-49.png");
   background-image: url("/assets/icons/icon_speed.svg"), none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 34px;
   margin-top: 0.78125em;
   margin-bottom: 0.78125em;
-  background-size: 2.2em;
+  background-size: 49px;
   background-position-y: 1.15em;
 }
 #features .organized h2:before {
@@ -977,14 +977,14 @@ body {
   width: 4em;
   height: 4em;
   margin: auto;
-  background-image: url("/assets/icons/icon_outline.png");
+  background-image: url("/assets/icons/icon_outline-50.png");
   background-image: url("/assets/icons/icon_outline.svg"), none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 34px;
   margin-top: 0.78125em;
   margin-bottom: 0.78125em;
-  background-size: 2.2em;
+  background-size: 50px;
 }
 
 #specs {
