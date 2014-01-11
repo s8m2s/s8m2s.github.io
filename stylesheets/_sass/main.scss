@@ -354,6 +354,7 @@ body {
     @if $img_main {background-image: url($img_main), none;}
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 34px;
     background-size: 1.5em;
     @include leader(.5);
     @include trailer(.5);
