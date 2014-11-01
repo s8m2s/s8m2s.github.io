@@ -5,7 +5,7 @@
 Name:			Scott Stamile
 Location:		Long Island, New York
 Website:		www.scottstamile.com
-email:			scottstamile@gmail.com
+Linkedin:		www.linkedin.com/in/scottstamile/
 
 Last update:	{{ site.time | date: '%m/%d/%Y' }}
 Standards:  	HTML5, CSS3
