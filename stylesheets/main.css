@@ -404,7 +404,6 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
-
 @font-face {
   font-family: 'intro caps';
   src: url("/assets/fonts/Intro_Bold_Caps-webfont.eot");
@@ -413,7 +412,6 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
-
 @font-face {
   font-family: 'intro caps';
   src: url("/assets/fonts/Intro_Black_Caps-webfont.eot");
@@ -422,13 +420,8 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
-
-* html {
-  font-size: 100%;
-}
-
 html {
-  font-size: 16px;
+  font-size: 100%;
   line-height: 1.5625em;
 }
 
@@ -511,8 +504,8 @@ a:active {
 /*  LAYOUT
 ----------------------------------------------------------------------------------------*/
 * {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -572,19 +565,8 @@ nav ul li {
 }
 
 #intro {
-  /* for IE 6/7 */
-  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-  /* non-JS fallback */
-  *zoom: 1;
-}
-#intro:before, #intro:after {
-  content: ".";
-  display: block;
-  height: 0;
   overflow: hidden;
-}
-#intro:after {
-  clear: both;
+  *zoom: 1;
 }
 #intro section {
   font-size: 1.25em;
@@ -595,23 +577,10 @@ nav ul li {
     width: 73.91304%;
     float: left;
     margin-right: -100%;
-    margin-left: 0%;
+    margin-left: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
     font-size: 1.4375em;
     line-height: 2.17391em;
-  }
-  #intro section:before, #intro section:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #intro section:after {
-    clear: both;
   }
 }
 @media (min-width: 960px) {
@@ -619,62 +588,25 @@ nav ul li {
     width: 65.71429%;
     float: left;
     margin-right: -100%;
-    margin-left: 0%;
+    margin-left: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
     font-size: 1.75em;
     line-height: 1.78571em;
-  }
-  #intro section:before, #intro section:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #intro section:after {
-    clear: both;
   }
 }
 
 #features {
-  /* for IE 6/7 */
-  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-  /* non-JS fallback */
+  overflow: hidden;
   *zoom: 1;
   text-align: center;
-}
-#features:before, #features:after {
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-#features:after {
-  clear: both;
 }
 @media (min-width: 520px) {
   #features .responsive {
     width: 47.82609%;
     float: left;
     margin-right: -100%;
-    margin-left: 0%;
+    margin-left: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-  }
-  #features .responsive:before, #features .responsive:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #features .responsive:after {
-    clear: both;
   }
 }
 @media (min-width: 960px) {
@@ -682,21 +614,8 @@ nav ul li {
     width: 22.85714%;
     float: left;
     margin-right: -100%;
-    margin-left: 0%;
+    margin-left: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-  }
-  #features .responsive:before, #features .responsive:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #features .responsive:after {
-    clear: both;
   }
 }
 @media (min-width: 520px) {
@@ -706,19 +625,6 @@ nav ul li {
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-  }
-  #features .maintainable:before, #features .maintainable:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #features .maintainable:after {
-    clear: both;
   }
 }
 @media (min-width: 960px) {
@@ -728,19 +634,6 @@ nav ul li {
     margin-right: -100%;
     margin-left: 25.71429%;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-  }
-  #features .maintainable:before, #features .maintainable:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #features .maintainable:after {
-    clear: both;
   }
 }
 @media (min-width: 520px) {
@@ -748,21 +641,8 @@ nav ul li {
     width: 47.82609%;
     float: left;
     margin-right: -100%;
-    margin-left: 0%;
+    margin-left: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-    clear: both;
-  }
-  #features .performance:before, #features .performance:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #features .performance:after {
     clear: both;
   }
 }
@@ -773,19 +653,6 @@ nav ul li {
     margin-right: -100%;
     margin-left: 51.42857%;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-  }
-  #features .performance:before, #features .performance:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #features .performance:after {
-    clear: both;
   }
 }
 @media (min-width: 520px) {
@@ -795,19 +662,6 @@ nav ul li {
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-  }
-  #features .organized:before, #features .organized:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #features .organized:after {
-    clear: both;
   }
 }
 @media (min-width: 960px) {
@@ -817,19 +671,6 @@ nav ul li {
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
-  }
-  #features .organized:before, #features .organized:after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #features .organized:after {
-    clear: both;
   }
 }
 
@@ -882,10 +723,8 @@ body {
   font-family: 'intro caps', arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -o-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
   line-height: 2em;
   padding: .08em 1.5em 0 1.5em;
@@ -906,10 +745,8 @@ body {
   content: "";
   display: block;
   background-color: #b31707;
-  -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
+  -webkit-border-radius: 2em;
   border-radius: 2em;
   width: 4em;
   height: 4em;
@@ -926,10 +763,8 @@ body {
   content: "";
   display: block;
   background-color: #b31707;
-  -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
+  -webkit-border-radius: 2em;
   border-radius: 2em;
   width: 4em;
   height: 4em;
@@ -947,10 +782,8 @@ body {
   content: "";
   display: block;
   background-color: #b31707;
-  -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
+  -webkit-border-radius: 2em;
   border-radius: 2em;
   width: 4em;
   height: 4em;
@@ -969,10 +802,8 @@ body {
   content: "";
   display: block;
   background-color: #b31707;
-  -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
+  -webkit-border-radius: 2em;
   border-radius: 2em;
   width: 4em;
   height: 4em;
@@ -991,20 +822,9 @@ body {
   background: #9da0aa;
   color: #eae0db;
   padding: 1em 0;
-  /* for IE 6/7 */
-  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-  /* non-JS fallback */
+  overflow: hidden;
   *zoom: 1;
   margin: 0;
-}
-#specs:before, #specs:after {
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-#specs:after {
-  clear: both;
 }
 #specs .inner {
   padding: 1em;
@@ -1018,29 +838,16 @@ body {
   margin: 0;
   padding: 0;
   text-indent: 0;
-  /* for IE 6/7 */
-  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-  /* non-JS fallback */
-  *zoom: 1;
-}
-#specs ul:before, #specs ul:after {
-  content: ".";
-  display: block;
-  height: 0;
   overflow: hidden;
-}
-#specs ul:after {
-  clear: both;
+  *zoom: 1;
 }
 #specs ul li {
   float: left;
   font-family: 'intro caps', arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -o-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
   line-height: 2em;
   padding: .08em 1.5em 0 1.5em;
@@ -1062,19 +869,8 @@ body {
 #work ul {
   padding: 0;
   list-style-type: none;
-  /* for IE 6/7 */
-  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-  /* non-JS fallback */
-  *zoom: 1;
-}
-#work ul:before, #work ul:after {
-  content: ".";
-  display: block;
-  height: 0;
   overflow: hidden;
-}
-#work ul:after {
-  clear: both;
+  *zoom: 1;
 }
 #work ul li {
   padding: 0;
@@ -1088,23 +884,10 @@ body {
     width: 47.82609%;
     float: left;
     margin-right: -100%;
-    margin-left: 0%;
+    margin-left: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
     clear: both;
     margin-top: 0;
-  }
-  #work ul li:nth-child(odd):before, #work ul li:nth-child(odd):after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #work ul li:nth-child(odd):after {
-    clear: both;
   }
 }
 @media (min-width: 520px) {
@@ -1114,20 +897,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     clear: none;
-    /* for IE 6/7 */
-    *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-    /* non-JS fallback */
-    *zoom: 1;
     margin-top: 0;
-  }
-  #work ul li:nth-child(even):before, #work ul li:nth-child(even):after {
-    content: ".";
-    display: block;
-    height: 0;
-    overflow: hidden;
-  }
-  #work ul li:nth-child(even):after {
-    clear: both;
   }
 }
 
@@ -1149,10 +919,8 @@ body {
   font-family: 'intro caps', arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -o-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
   line-height: 2em;
   padding: .08em 1.5em 0 1.5em;
@@ -1231,8 +999,7 @@ body {
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   p,
   h2,
   h3 {
@@ -1245,3 +1012,5 @@ body {
     page-break-after: avoid;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

@@ -10,6 +10,8 @@ javascripts_dir = "javascripts"
 # jekyll sass_options = { :debug_info => true }
 # sass_options = { :sourcemap => true }
 # enable_sourcemaps = true
+sourcemap = true
+
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed

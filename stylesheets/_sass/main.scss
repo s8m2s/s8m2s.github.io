@@ -184,10 +184,10 @@ a {
 /*  LAYOUT
 ----------------------------------------------------------------------------------------*/
 
-$grids: 4;
-$grids: add-grid(8 at 520px);
-$grids: add-grid(12 at 960px);
-$gutters: 1/2;
+@include add-grid (4);
+@include add-grid(8 at 520px);
+@include add-grid(12 at 960px);
+@include add-gutter (1/2);
 $include-clearfix: true;
 
 * {@include box-sizing('border-box');}
