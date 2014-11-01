@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>http://www.scottstamile.com/</loc>
-  <lastmod>2013-12-08T04:18:22+00:00</lastmod>
+  <lastmod>2014-11-01T04:18:22+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.scottstamile.com/assets/documents/Scott%20Stamile%27s%20Resume%20-%20Designer%2C%20Developer%2C%20Project%20Manager.pdf</loc>
-  <lastmod>2013-12-08T04:18:22+00:00</lastmod>
+  <loc>http://www.scottstamile.com/resume/</loc>
+  <lastmod>2014-11-01T04:18:22+00:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
