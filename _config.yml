@@ -4,6 +4,7 @@ safe: true
 exclude:
   - config.rb
   - gulpfile.js
+  - node_modules
   - Gemfile
   - Gemfile.lock
   - README.md
