@@ -1,27 +1,17 @@
-if (Modernizr.flexbox) {
+(function() {
 
-	// Set the height of an eliment to fill the height of the viewport
-	var resizePoster = function () {
+// if (Modernizr.flexbox) {
 
-	    var posters = {
-	        content: $('.poster')
-	    };
+  // changes the height when the window is resized or when orientation changes
+  $(window).on('load resize orientationchange', function(){
+    $('.poster').css('height', $(window).height());
+  });
 
-	    posters.content.css('height', $(window).height());
+// };
 
-	};
-
-	// Set height on load
-	resizePoster();
-
-	// changes the height when the window is resized or when orientation changes
-	$(window).bind('resize orientationchange', resizePoster);
-
-};
-
-// Smooth scroll to any anchor
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
+  // Smooth scroll to any anchor
+  $('a[href*=#]:not([href=#])').click(function(e) {
+    
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -29,11 +19,17 @@ $(function() {
         $('html,body').animate({
           scrollTop: target.offset().top
         }, 1000);
-        return false;
+        e.preventDefault();
       }
     }
   });
-});
+
+})();
+
+
+// $(function() {
+
+// });
 
 
 

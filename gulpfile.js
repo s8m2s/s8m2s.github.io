@@ -1,5 +1,14 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
+	uglify = require('gulp-uglify'),
+	rename = require('gulp-rename');
 
-gulp.task('default', function() {
-  // place code for your default task here
+gulp.task('min', function(){
+	
+	// var minfilter = filter(['**','!javascripts/min'])
+
+	gulp.src(['javascripts/**/*.js','!javascripts/**/*.min.js'])
+	.pipe(uglify())
+	.pipe(rename({suffix:'.min'}))
+	.pipe(gulp.dest('javascripts'));
+
 });
