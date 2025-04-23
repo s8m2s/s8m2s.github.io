@@ -1,5 +1,21 @@
 name: Scott Stamile Front end Web Developer and Designer
-safe: true
+description: Personal website and portfolio of Scott Stamile, Front end Web Developer and Designer
+url: "https://s8m2s.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+sass:
+  style: compressed
+  sourcemap: never
 
 exclude:
   - config.rb
@@ -11,3 +27,4 @@ exclude:
   - .*
   - CNAME
   - nohup.out
+  - vendor
